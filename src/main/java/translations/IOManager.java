@@ -62,6 +62,21 @@ public class IOManager {
     }
 
     private Pattern[] getCompiledPatterns() {
+        Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-zA-Z]+[a-zA-Z\\d]*)\\s*$");
+        Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
+        
+        Pattern intPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+integer\\s+between\\s+(-?\\d+)\\s+and\\s+(-?\\d+)\\s*$");
+        Pattern floatPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+float\\s+between\\s+(-?\\d+\\.?\\d*)\\s+and\\s+(-?\\d+\\.?\\d*)\\s*$");
+        Pattern enumPattern = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*:\\s+([a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*)\\s*$");
+        
+        Pattern unaryPattern = Pattern.compile("^([A-Za-z\\d]+)\\[([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-z\\d!=(),.<> -]*)\\|\\s*$");
+        //Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
+        Pattern binaryPattern = Pattern.compile("^([A-Za-z\\d -]+)\\[([a-zA-Z]+[a-zA-Z\\d]*),\\s*([a-zA-Z]+[a-zA-Z\\d]*)]\\s+\\|\\s*([Aa-zA-Z\\d!=(),.<> -]*)\\|\\s*([Ta-zA-Z\\d!=(),.<> -]*)\\|\\s*$");
+        
+        Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
+        Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(is not|is)\\s+[a-zA-Z]+[a-zA-Z\\d]*\\s*$*");
+        Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-zA-Z]+[a-zA-Z\\d]*\\s+(not in|in)\\s+[a-zA-Z]+[a-zA-Z\\d]*(,\\s+[a-zA-Z]+[a-zA-Z\\d]*)*\\s*$");
+        /*
         Pattern activityPattern = Pattern.compile("^\\s*activity\\s+([a-z]+[a-z\\d]*)\\s*$");
         Pattern bindingPattern = Pattern.compile("^\\s*bind\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*:\\s+([a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*)\\s*$");
 
@@ -75,6 +90,7 @@ public class IOManager {
         Pattern numericConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(>=|<=|>|<|=|!=)\\s+-?\\d+.?\\d*\\s*$");
         Pattern enumConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(is not|is)\\s+[a-z]+[a-z\\d]*\\s*$*");
         Pattern listConditionPattern = Pattern.compile("^\\s*[atAT].[a-z]+[a-z\\d]*\\s+(not in|in)\\s+[a-z]+[a-z\\d]*(,\\s+[a-z]+[a-z\\d]*)*\\s*$");
+        */
         return new Pattern[] {activityPattern, bindingPattern, intPattern, floatPattern, enumPattern, unaryPattern, binaryPattern,
                 numericConditionPattern, enumConditionPattern, listConditionPattern};
     }

@@ -17,15 +17,20 @@ import java.util.Scanner;
 public class Runner {
 
     public static void main(String[] args) throws Exception {
-       findAlignments(20);
+       findAlignments(args[0], args[1], args[2], args[3], args[4]);
+
     }
 
-    public static void findAlignments(int length) throws Exception {
+    public static void findAlignments(String modelString,
+            String traceString, 
+            String variablesString, 
+            String substitutionsString, 
+            String costsString) throws Exception {
         IOManager ioManager = IOManager.getInstance();
 
-        DeclareModel model = ioManager.readDeclareModel("recap-model.decl");
-        model.assignCosts(ioManager.readCostModel("testing-costModel.txt"));
-        LogFile log = ioManager.readLog("recap-log.xes", model);
+        DeclareModel model = ioManager.readDeclareModel(modelString);
+        model.assignCosts(ioManager.readCostModel(costsString));
+        LogFile log = ioManager.readLog(traceString, model);
         //System.out.println(log);
 
 
