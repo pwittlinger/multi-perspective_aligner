@@ -53,6 +53,7 @@ public class Planner extends AbstractStateSpacePlanner {
             return factory.encode();
         } catch (IOException e) {
             errorManager.printAll();
+            System.out.println(e.toString());
             return null;
         }
     }

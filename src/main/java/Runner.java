@@ -41,19 +41,21 @@ public class Runner {
             System.out.println(ltlFormula);
             PDDLGenerator pddlGenerator = new PDDLGenerator(model, ltlFormula);
             String domain = pddlGenerator.defineDomain();
+            IOManager.getInstance().exportDomainPDDL(domain);
             ArrayList<String> problems = log.defineProblems(pddlGenerator);
             int i = 1;
             for (String problem : problems) {
                 IOManager.getInstance().exportProblemPDDL(problem, i);
                 i++;
             }
+            /* 
             Planner planner = new Planner(domain, problems);
-            IOManager.getInstance().exportDomainPDDL(domain);
+            
             ArrayList<String> alignments = planner.readProblems();
             log.repairTraces(alignments, model.getActivities());
-            //ArrayList<XTrace> originalXTraces = log.buildOriginalXTraces();
-            //ArrayList<XTrace> repairedXTraces = log.buildRepairedXTraces();
+
             IOManager.getInstance().exportLog(log);
+            */
         }
     }
 }

@@ -264,7 +264,7 @@ public class IOManager {
     }
 
     private String[] readCostsLine(String line) {
-        Matcher matcher = Pattern.compile("^\\s*([a-z]+[a-z\\d]*)+\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s*$").matcher(line);
+        Matcher matcher = Pattern.compile("^\\s*([a-zA-Z]+[a-zA-Z\\d]*)+\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s*$").matcher(line);
         if (matcher.find()) {
             String[] costs = new String[6];
             for (int i = 0; i < 6; i++) {
