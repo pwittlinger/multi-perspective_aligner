@@ -6,6 +6,9 @@ import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XLog;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.DOTExporter;
+import org.processmining.ltl2automaton.plugins.automaton.DeterministicAutomaton;
+import org.processmining.plugins.declareminer.ExecutableAutomaton;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -301,6 +304,10 @@ public class IOManager {
     }
 
     public void exportToDot(Automaton automaton) throws IOException {
+        DOTExporter.exportToDot(automaton, "MyAutomata", new FileWriter(outputFolder + File.separator + "automaton.dot"));
+    }
+
+    public void exportToDot(DeterministicAutomaton automaton) throws IOException {
         DOTExporter.exportToDot(automaton, "MyAutomata", new FileWriter(outputFolder + File.separator + "automaton.dot"));
     }
 }

@@ -1,23 +1,39 @@
 import log.LogFile;
+import model.DataPetriNet;
 import model.DeclareModel;
 import org.deckfour.xes.model.XTrace;
+import org.processmining.datapetrinets.io.DPNIOException;
 import org.processmining.ltl2automaton.plugins.LTL2Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
 import org.processmining.ltl2automaton.plugins.formula.DefaultParser;
+import org.processmining.ltl2automaton.plugins.ltl.SyntaxParserException;
+import org.processmining.plugins.declareminer.ExecutableAutomaton;
+import org.processmining.ltl2automaton.plugins.automaton.DeterministicAutomaton;
+import org.processmining.ltl2automaton.plugins.automaton.DOTExporter;
+
 import translations.DeclareToLTL;
 import translations.IOManager;
 import translations.PDDLGenerator;
+import utils.AutomatonUtils;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Runner {
 
     public static void main(String[] args) throws Exception {
-       findAlignments(args[0], args[1], args[2], args[3], args[4]);
+
+
+       //findAlignments(args[0], args[1], args[2], args[3], args[4]);
+
+       //readDataPetriNet();
+
+       findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
 
     }
 
@@ -58,6 +74,127 @@ public class Runner {
             */
         }
     }
+
+    public static void findAlignments(String modelString,
+            String traceString, 
+            String variablesString, 
+            String substitutionsString, 
+            String costsString,
+            String petriNetName) throws Exception {
+
+        ArrayList<DeterministicAutomaton> allAutomata = new ArrayList<DeterministicAutomaton>();
+
+        System.out.println( "THIS IS GETTING EXECUTED");
+
+
+        IOManager ioManager = IOManager.getInstance();
+
+        DeclareModel model = ioManager.readDeclareModel(modelString);
+        model.assignCosts(ioManager.readCostModel(costsString));
+        LogFile log = ioManager.readLog(traceString, model);
+        //System.out.println(log);
+
+        DataPetriNet dpn = new DataPetriNet(petriNetName, model);
+
+        
+
+           
+        //System.out.println(dpn.createAutomatonVisualizationString(dpn.getAutomaton(), false));
+            
+        
+            
+
+
+        ioManager.exportModel(model);
+        String ltlFormula = new DeclareToLTL(model).translateModelToLTL();
+
+        if (!ltlFormula.isBlank()) {
+            Automaton declAutomaton = LTL2Automaton.getInstance().translate(new DefaultParser(ltlFormula).parse());
+
+            allAutomata.add(dpn.getAutomaton());
+            allAutomata.add(declAutomaton.op.determinize());
+
+            DeterministicAutomaton globalAutomaton = AutomatonUtils.createMinimizedIntersection(allAutomata);
+
+           // ExecutableAutomaton globAut = AutomatonUtils.createGlobalAutomaton(allAutomata);
+
+            ioManager.exportToDot(globalAutomaton);
+
+            System.out.println(ltlFormula);
+            PDDLGenerator pddlGenerator = new PDDLGenerator(model, ltlFormula);
+
+            pddlGenerator.setAutomaton(globalAutomaton);
+            String domain = pddlGenerator.defineDomain();
+            IOManager.getInstance().exportDomainPDDL(domain);
+            ArrayList<String> problems = log.defineProblems(pddlGenerator);
+            int i = 1;
+            for (String problem : problems) {
+                IOManager.getInstance().exportProblemPDDL(problem, i);
+                i++;
+            }
+            /* 
+            Planner planner = new Planner(domain, problems);
+            
+            ArrayList<String> alignments = planner.readProblems();
+            log.repairTraces(alignments, model.getActivities());
+
+            IOManager.getInstance().exportLog(log);
+            
+           */
+        }
+        
+    }
+
+
+    public static void readDataPetriNet() throws SyntaxParserException, Exception {
+        String path = "C:\\Users\\paulw\\OneDrive - Scientific Network South Tyrol\\trace-alignment\\petrinet\\a29g9AND.pnml";
+        DataPetriNet dpn = null;
+
+        IOManager ioManager = IOManager.getInstance();
+        String modelString = "a29g9AND_7_parsed.decl";
+
+        DeclareModel model = ioManager.readDeclareModel(modelString);
+
+        String ltlFormula = new DeclareToLTL(model).translateModelToLTL();
+
+
+        try {
+            dpn = new DataPetriNet(path, model);
+
+            Automaton declAutomaton = LTL2Automaton.getInstance().translate(new DefaultParser(ltlFormula).parse());
+
+
+            ArrayList<DeterministicAutomaton> allAutomata = new ArrayList<DeterministicAutomaton>();
+
+            allAutomata.add(dpn.getAutomaton());
+            //allAutomata.add(declAutomaton.op.determinize());
+
+            DeterministicAutomaton globalAutomaton = AutomatonUtils.createMinimizedIntersection(allAutomata);
+
+            ioManager.exportToDot(globalAutomaton);
+
+        
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (SecurityException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (DPNIOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
 }
 
 

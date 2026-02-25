@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Runner",
+            "request": "launch",
+            "mainClass": "Runner",
+            "projectName": "MultiPerspectiveAligner",
+            "vmArgs": "-Xms4096M -Xmx10G",
+            "args": [
+                "a29g9AND_7_parsed.decl", 
+                "a29g9AND-del-5.xes", 
+                "variable_values_multi_model.txt", 
+                "variable_substitutions_a29g9AND_7.decl.txt", 
+                "cost_model-a29g9AND.txt",
+                "C:\\Users\\paulw\\OneDrive - Scientific Network South Tyrol\\trace-alignment\\petrinet\\a29g9AND.pnml"
+            ]
+
+        }
+    ]
+}

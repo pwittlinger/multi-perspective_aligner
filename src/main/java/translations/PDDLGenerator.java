@@ -4,6 +4,7 @@ import model.Activity;
 import model.DeclareModel;
 import org.processmining.ltl2automaton.plugins.LTL2Automaton;
 import org.processmining.ltl2automaton.plugins.automaton.Automaton;
+import org.processmining.ltl2automaton.plugins.automaton.DeterministicAutomaton;
 import org.processmining.ltl2automaton.plugins.automaton.State;
 import org.processmining.ltl2automaton.plugins.automaton.Transition;
 import org.processmining.ltl2automaton.plugins.formula.DefaultParser;
@@ -15,9 +16,9 @@ import java.util.Map;
 public class PDDLGenerator {
 
     private final HashMap<String, Activity> activities;
-    private final Automaton automaton;
-    private final ArrayList<State> acceptingStates;
-    private final ArrayList<Transition> relevantTransitions;
+    private Automaton automaton;
+    private ArrayList<State> acceptingStates;
+    private ArrayList<Transition> relevantTransitions;
 
 
     public PDDLGenerator(DeclareModel model, String ltlString) throws Exception {
@@ -25,7 +26,7 @@ public class PDDLGenerator {
         this.automaton = LTL2Automaton.getInstance().translate(new DefaultParser(ltlString).parse());
         this.acceptingStates = findAcceptingStates();
         this.relevantTransitions = findRelevantTransitions();
-        IOManager.getInstance().exportToDot(automaton);
+        //IOManager.getInstance().exportToDot(automaton);
     }
 
 
@@ -310,4 +311,13 @@ public class PDDLGenerator {
                 "(cur_state s_abstract)\n" + "))\n" +
                 "(:metric minimize (total-cost))\n";
     }
+
+
+    public void setAutomaton(Automaton aut) {
+        this.automaton = aut;
+        this.acceptingStates = findAcceptingStates();
+        this.relevantTransitions = findRelevantTransitions();
+
+    }
+
 }

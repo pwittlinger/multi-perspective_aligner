@@ -1,0 +1,562 @@
+package model;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
+
+import org.processmining.datapetrinets.DataPetriNetsWithMarkings;
+import org.processmining.datapetrinets.io.DPNIOException;
+import org.processmining.datapetrinets.io.DataPetriNetImporter;
+import org.processmining.ltl2automaton.plugins.automaton.Automaton;
+import org.processmining.ltl2automaton.plugins.automaton.DefaultAutomatonFactory;
+import org.processmining.ltl2automaton.plugins.automaton.DeterministicAutomaton;
+import org.processmining.ltl2automaton.plugins.automaton.State;
+import org.processmining.models.graphbased.directed.petrinet.Petrinet;
+import org.processmining.models.graphbased.directed.petrinet.PetrinetEdge;
+import org.processmining.models.graphbased.directed.petrinet.PetrinetNode;
+import org.processmining.models.graphbased.directed.petrinet.elements.Place;
+import org.processmining.models.graphbased.directed.petrinet.elements.Transition;
+import org.processmining.models.semantics.IllegalTransitionException;
+import org.processmining.models.semantics.petrinet.Marking;
+import org.processmining.models.semantics.petrinet.PetrinetSemantics;
+import org.processmining.models.semantics.petrinet.impl.PetrinetSemanticsFactory;
+import org.processmining.plugins.declareminer.ExecutableAutomaton;
+import org.processmining.plugins.declareminer.PossibleNodes;
+
+
+public class DataPetriNet {
+    
+	public Set<String> activities = new HashSet<String>();
+	public Set<String> copyActivities = new HashSet<String>();
+
+	//private Automaton automaton;
+	private DeterministicAutomaton automaton;
+	public ExecutableAutomaton executableAutomaton;
+	public DataPetriNetsWithMarkings dataPetriNet;
+	public DataPetriNetsWithMarkings copyOfDataPetriNet;
+	public HashMap<String, String> guardStrings;
+	public static DataPetriNetImporter dataPetriNetImporter = new DataPetriNetImporter();
+	public List automatonStrings;
+	public HashMap<String, Activity> activityMap;
+	//private ExecutableAutomaton executableAutomaton;
+	//private DataPetriNetsWithMarkings dataPetriNet;
+	//DataPetriNetImporter dataPetriNetImporter = new DataPetriNetImporter();
+	
+	public DataPetriNet(String inputDPN) throws DPNIOException, FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException{
+		//DataPetriNetImporter dataPetriNetImporter = new DataPetriNetImporter();
+		InputStream inputStream = new BufferedInputStream(new FileInputStream(inputDPN));
+		this.dataPetriNet = dataPetriNetImporter.importFromStream(inputStream).getDPN();
+		this.activities = new HashSet<String>();
+
+		for (Transition t : dataPetriNet.getTransitions()) {
+			if (!t.isInvisible() && !activities.contains(t.getLabel())) {
+				activities.add(t.getLabel());
+		}
+		}
+		
+		this.guardStrings = new HashMap<String, String>();
+		this.initializeAutomaton(this.dataPetriNet);
+		this.executableAutomaton = new ExecutableAutomaton(automaton);
+		this.mapAllActivities();
+		this.activityMap = this.addActivities();
+	}
+
+	public DataPetriNet(String inputDPN, DeclareModel decl) throws DPNIOException, FileNotFoundException, NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException{
+		//DataPetriNetImporter dataPetriNetImporter = new DataPetriNetImporter();
+		InputStream inputStream = new BufferedInputStream(new FileInputStream(inputDPN));
+		this.dataPetriNet = dataPetriNetImporter.importFromStream(inputStream).getDPN();
+
+		InputStream inputStream2 = new BufferedInputStream(new FileInputStream(inputDPN));
+		this.copyOfDataPetriNet = dataPetriNetImporter.importFromStream(inputStream2).getDPN();
+		this.activities = new HashSet<String>();
+
+		HashMap<String,Activity> declActs = decl.getActivities();
+
+
+		for (Transition t:dataPetriNet.getTransitions()) {
+			String l = t.getLabel();
+
+				if (!t.isInvisible()) {
+
+					if (declActs.keySet().contains(l)) {
+
+						Activity curA = declActs.get(l);
+
+						Map<String,ArrayList<String>> parts = curA.getPartitions();
+						parts.keySet();
+
+						for (String p : parts.keySet()) {
+							activities.add(p);
+						}
+
+					}
+					else {
+						activities.add(l);
+					}
+			}
+		}
+		
+		this.guardStrings = new HashMap<String, String>();
+		this.initializeAutomatonWithPropositions(this.dataPetriNet, decl);
+		this.executableAutomaton = new ExecutableAutomaton(automaton);
+	}
+
+
+
+	//Starts the PN traversal, does all the pre- and post-processing 
+	public void initializeAutomaton(DataPetriNetsWithMarkings dataPetriNet) {
+		//Allows to execute transitions and manipulate the state of the underlying Petri Net
+		PetrinetSemantics petrinetSemantics = PetrinetSemanticsFactory.regularPetrinetSemantics(Petrinet.class); //The class argument is actually unused
+		petrinetSemantics.initialize(dataPetriNet.getTransitions(), dataPetriNet.getInitialMarking());
+
+		//Data structures and factory for automata creation
+		DefaultAutomatonFactory automatonFactory = new DefaultAutomatonFactory();
+		List<Marking> visitedMarkings = new ArrayList<Marking>();
+		Map<Marking, State> markingToAutomatonState = new HashMap<Marking, State>(); //For setting the accepting states of the automaton
+		Stack<Marking> currentMarkingPath = new Stack<Marking>();
+
+		//Processing the initial state
+		Marking initialMarking = petrinetSemantics.getCurrentState();
+		processVisitedState(initialMarking, automatonFactory, visitedMarkings, markingToAutomatonState, currentMarkingPath);
+		automatonFactory.initialState(markingToAutomatonState.get(initialMarking));
+
+		//Petri Net traversal and automata construction
+		visitNextState(petrinetSemantics, currentMarkingPath, automatonFactory, visitedMarkings, markingToAutomatonState);
+
+		//Setting the accepting states of the automaton
+		for (Marking marking : dataPetriNet.getFinalMarkings()) {
+			State state = markingToAutomatonState.get(marking);
+			automatonFactory.updateState(state, state.getId(), true);
+			//automatonFactory.addAllTransition(state, state); //This would mean that DPN is considered permanently satisfied once the final marking has been reached
+		}
+
+		//Creating fail state and self loops
+		State failState = new State(automatonFactory.getAutomaton().getStateCount());
+		automatonFactory.addState(failState);
+		automatonFactory.addAllTransition(failState, failState);
+
+
+
+		for (Marking marking : visitedMarkings) {
+			//Adding a transition from current state to fail state for each proposition that is unhandled by existing outgoing transitions 
+			Set<String> outgoingActivities = new HashSet<String>();
+			for (org.processmining.ltl2automaton.plugins.automaton.Transition transition :  markingToAutomatonState.get(marking).getOutput()) {
+				outgoingActivities.add(transition.getPositiveLabel());
+			}
+			Set<String> unhandeledActivities = new HashSet<String>();
+			unhandeledActivities.addAll(activities);
+			unhandeledActivities.removeAll(outgoingActivities);
+			for (String unhandeledActivity : unhandeledActivities) {
+				automatonFactory.addPropositionTransition(markingToAutomatonState.get(marking), failState, unhandeledActivity);
+			}
+
+			//Adding a self-loop to each state of the automaton (matches all propositions that are not part of the alphabet of this DPN)
+			automatonFactory.addNegativePropositionsTransition( markingToAutomatonState.get(marking),  markingToAutomatonState.get(marking), activities);
+		}
+
+		//Setting the automaton state ids and creating the executable automaton
+		this.automaton = automatonFactory.getAutomaton().op.determinize().op.complete().op.renumber().op.minimize();
+		this.executableAutomaton = new ExecutableAutomaton(automaton);
+	}
+
+	//PN traversal + constructing the automata transitions
+	private static void visitNextState(PetrinetSemantics petrinetSemantics, Stack<Marking> currentMarkingPath, DefaultAutomatonFactory automatonFactory, List<Marking> visitedMarkings, Map<Marking, State> markingToAutomatonState) {
+		Marking currentMarking = currentMarkingPath.peek();
+
+		for (Transition transition : petrinetSemantics.getExecutableTransitions()) {
+			/*
+			if (transition.isInvisible()) { //TODO: Silent transitions
+				continue;
+			}
+			*/
+
+			try {
+				petrinetSemantics.setCurrentState(currentMarking);
+				petrinetSemantics.executeExecutableTransition(transition); //Moves the PN to a new marking, but the variable currentMarking remains unchanged
+
+				if (!visitedMarkings.contains(petrinetSemantics.getCurrentState())) {
+					processVisitedState(petrinetSemantics.getCurrentState(), automatonFactory, visitedMarkings, markingToAutomatonState, currentMarkingPath);
+					automatonFactory.addPropositionTransition(markingToAutomatonState.get(currentMarking), markingToAutomatonState.get(petrinetSemantics.getCurrentState()), transition.getLabel());
+					visitNextState(petrinetSemantics, currentMarkingPath, automatonFactory, visitedMarkings, markingToAutomatonState);
+				} else {
+					automatonFactory.addPropositionTransition(markingToAutomatonState.get(currentMarking), markingToAutomatonState.get(petrinetSemantics.getCurrentState()), transition.getLabel());
+				}
+
+			} catch (IllegalTransitionException e) {
+				//This should never happen because the loop is over executable transitions
+				System.err.println(e.getMessage());
+			}
+		}
+
+		//Backtracking
+		currentMarkingPath.pop();
+	}
+
+	//Creates an automaton state for a given marking (should be called once per each unique marking)
+	private static void processVisitedState(Marking marking, DefaultAutomatonFactory automatonFactory, List<Marking> visitedStates, Map<Marking, State> markingToAutomatonState, Stack<Marking> currentStatePath) {
+		State automatonState = new State(automatonFactory.getAutomaton().getStateCount()); //State class refers to the automaton state
+		automatonFactory.addState(automatonState);
+		visitedStates.add(marking);
+		currentStatePath.add(marking);
+		markingToAutomatonState.put(marking, automatonState);
+	}
+
+
+	//For building a DOT string of the automaton
+	//A helper method for building the DOT string
+	public boolean isNonAcceptingTrap(State s) {
+		if (!s.isAccepting() && s.getOutputSize()==1) {
+			org.processmining.ltl2automaton.plugins.automaton.Transition t = s.getOutput().iterator().next();
+			if (t.isAll() && t.getTarget()==s) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	
+	public List<HashMap<State, List<String>>> listAutomatonActivities(Automaton aut) {
+		
+		List<HashMap<State, List<String>>> outputList = new ArrayList<HashMap<State, List<String>>>();
+		//HashMap<State, Collection<List<String>>> outputList = new HashMap<State, Collection<List<String>>>();
+		
+		for (final State s : aut) {
+			if (this.isNonAcceptingTrap(s)) {
+				continue; //Skipping the fail-state
+			}
+			HashMap<State, List<String>> outStateToLabels = new HashMap<State, List<String>>();
+			for (final org.processmining.ltl2automaton.plugins.automaton.Transition t : s.getOutput()) {
+				if (this.isNonAcceptingTrap(t.getTarget())) {
+					continue; //Skipping the edges that lead to the fail-state
+				}
+				//Replacing encodings with activity names and merging same labeled transitions (not the most efficient code)
+				if (!outStateToLabels.containsKey(t.getTarget())) {
+					outStateToLabels.put(t.getTarget(), new ArrayList<String>());
+				}
+
+				String transitionLabel = t.toString();
+				if (t.isNegative()) { //Only one outgoing negative transitions per state
+					List<String> negLabels = Arrays.asList(transitionLabel.split("&"));
+					if (negLabels.size() == activities.size()) { //Not adding the edge if all activities were negated
+						outStateToLabels.remove(t.getTarget());
+						continue;
+					}
+					for (String activity : activities) {
+						if (!negLabels.contains("!"+activity)) {
+							outStateToLabels.get(t.getTarget()).add(activity);
+						}
+					}
+				} else if (t.isPositive()) { //Only one activity name per positive transition
+					outStateToLabels.get(t.getTarget()).add(t.toString());
+				} else { //The "any" transition remains as-is
+					outStateToLabels.get(t.getTarget()).add(transitionLabel);
+				}
+
+			}
+
+		outputList.add(outStateToLabels);
+		}
+		return outputList;
+	}
+	
+
+	public void mapAllActivities(){
+		Collection<Transition> trans = this.dataPetriNet.getTransitions();
+
+		for (Transition t : trans) {
+			if (!this.activities.contains(t.toString())) {
+				this.activities.add(t.toString());
+			}
+		}
+	}
+
+	private HashMap<String, Activity> addActivities() {
+		HashMap<String, Activity> newActivities = new HashMap<>();
+
+		for (String act : this.activities){
+			newActivities.put(act, new Activity(act));
+		}
+		/*
+		for (String[] line : activityLines) {
+		  newActivities.put(line[0], new Activity(line[0]));
+		}
+		 */
+		return newActivities;
+	  }
+
+	public void initializeAutomatonWithPropositions(DataPetriNetsWithMarkings dataPetriNet, DeclareModel declareModel) {
+
+		HashMap<String,Activity> declActs = declareModel.getActivities();
+
+		
+
+		addPropositionsToTransitions(declareModel);
+
+		for (Transition t : copyOfDataPetriNet.getTransitions()) {
+			if (!t.isInvisible() && !copyActivities.contains(t.getLabel())) {
+				copyActivities.add(t.getLabel());
+		}
+		}
+
+		//Allows to execute transitions and manipulate the state of the underlying Petri Net
+		PetrinetSemantics petrinetSemantics = PetrinetSemanticsFactory.regularPetrinetSemantics(Petrinet.class); //The class argument is actually unused
+		petrinetSemantics.initialize(copyOfDataPetriNet.getTransitions(), copyOfDataPetriNet.getInitialMarking());
+
+		//Data structures and factory for automata creation
+		DefaultAutomatonFactory automatonFactory = new DefaultAutomatonFactory();
+		List<Marking> visitedMarkings = new ArrayList<Marking>();
+		Map<Marking, State> markingToAutomatonState = new HashMap<Marking, State>(); //For setting the accepting states of the automaton
+		Stack<Marking> currentMarkingPath = new Stack<Marking>();
+
+		//Processing the initial state
+		Marking initialMarking = petrinetSemantics.getCurrentState();
+		processVisitedState(initialMarking, automatonFactory, visitedMarkings, markingToAutomatonState, currentMarkingPath);
+		automatonFactory.initialState(markingToAutomatonState.get(initialMarking));
+
+		//Petri Net traversal and automata construction
+		visitNextState(petrinetSemantics, currentMarkingPath, automatonFactory, visitedMarkings, markingToAutomatonState);
+
+		//Setting the accepting states of the automaton
+		for (Marking marking : copyOfDataPetriNet.getFinalMarkings()) {
+			State state = markingToAutomatonState.get(marking);
+			automatonFactory.updateState(state, state.getId(), true);
+			//automatonFactory.addAllTransition(state, state); //This would mean that DPN is considered permanently satisfied once the final marking has been reached
+		}
+
+		//Creating fail state and self loops
+		State failState = new State(automatonFactory.getAutomaton().getStateCount());
+		automatonFactory.addState(failState);
+		automatonFactory.addAllTransition(failState, failState);
+
+		
+
+
+		for (Marking marking : visitedMarkings) {
+			//Adding a transition from current state to fail state for each proposition that is unhandled by existing outgoing transitions 
+			Set<String> outgoingActivities = new HashSet<String>();
+			for (org.processmining.ltl2automaton.plugins.automaton.Transition transition :  markingToAutomatonState.get(marking).getOutput()) {
+				String l = transition.getPositiveLabel();
+				outgoingActivities.add(l);
+			}
+			Set<String> unhandeledActivities = new HashSet<String>();
+			
+			unhandeledActivities.addAll(copyActivities);
+			unhandeledActivities.removeAll(outgoingActivities);
+			for (String unhandeledActivity : unhandeledActivities) {
+				automatonFactory.addPropositionTransition(markingToAutomatonState.get(marking), failState, unhandeledActivity);
+			}
+
+			//Adding a self-loop to each state of the automaton (matches all propositions that are not part of the alphabet of this DPN)
+			automatonFactory.addNegativePropositionsTransition( markingToAutomatonState.get(marking),  markingToAutomatonState.get(marking), copyActivities);
+		}
+
+		//Setting the automaton state ids and creating the executable automaton
+		this.automaton = automatonFactory.getAutomaton().op.determinize().op.complete().op.renumber().op.minimize();
+
+		this.executableAutomaton = new ExecutableAutomaton(automaton);
+	}
+
+
+	public String createAutomatonVisualizationString(DeterministicAutomaton aut, boolean alternativeLayout) {
+		//Adopted from org.processmining.ltl2automaton.plugins.automaton.DOTExporter, but significantly modified
+		StringBuilder sb = new StringBuilder();
+		sb.append("digraph \"\" {");
+
+		if (aut==null) {
+			sb.append("}");
+			return sb.toString();
+		} else {
+			sb.append(" init [shape=none, label=\"\"];");
+			if (!alternativeLayout)
+				sb.append(" rankdir = \"LR\"");
+
+			for (final State s : aut) {
+				if (!this.isNonAcceptingTrap(s)) {
+					sb.append(" s");
+					sb.append(s.getId());
+					if (s.isAccepting()) {
+						sb.append("[shape=doublecircle]");
+					} else {
+						sb.append("[shape=circle]");
+					}
+					sb.append(';');
+				}
+			}
+
+			for (final State s : aut) {
+				if (this.isNonAcceptingTrap(s)) {
+					continue; //Skipping the fail-state
+				}
+				Map<State, List<String>> outStateToLabels = new HashMap<State, List<String>>();
+				for (final org.processmining.ltl2automaton.plugins.automaton.Transition t : s.getOutput()) {
+					if (this.isNonAcceptingTrap(t.getTarget())) {
+						continue; //Skipping the edges that lead to the fail-state
+					}
+					//Replacing encodings with activity names and merging same labeled transitions (not the most efficient code)
+					if (!outStateToLabels.containsKey(t.getTarget())) {
+						outStateToLabels.put(t.getTarget(), new ArrayList<String>());
+					}
+
+					String transitionLabel = t.toString();
+					if (t.isNegative()) { //Only one outgoing negative transitions per state
+						List<String> negLabels = Arrays.asList(transitionLabel.split("&"));
+						if (negLabels.size() == activities.size()) { //Not adding the edge if all activities were negated
+							outStateToLabels.remove(t.getTarget());
+							continue;
+						}
+						for (String activity : activities) {
+							if (!negLabels.contains("!"+activity)) {
+								outStateToLabels.get(t.getTarget()).add(activity);
+							}
+						}
+					} else if (t.isPositive()) { //Only one activity name per positive transition
+						outStateToLabels.get(t.getTarget()).add(t.toString());
+					} else { //The "any" transition remains as-is
+						outStateToLabels.get(t.getTarget()).add(transitionLabel);
+					}
+
+				}
+
+				//Adding the edge to dot string
+				for (State outState : outStateToLabels.keySet()) {
+					sb.append(" s");
+					sb.append(s.getId());
+					sb.append(" -> s");
+					sb.append(outState.getId());
+					sb.append("[label=\"");
+					sb.append(String.join("\n", outStateToLabels.get(outState)).replaceAll("\"", "\""));
+					sb.append("\"];");
+				}
+			}
+
+			if (aut.getInit() != null) {
+				sb.append(" init -> s");
+				sb.append(aut.getInit().getId());
+				sb.append(';');
+			}
+
+			sb.append("}");
+
+			return sb.toString();
+		}
+
+
+	}
+
+	public DeterministicAutomaton getAutomaton(){
+		return this.automaton;
+	}
+
+	private void addPropositionsToTransitions(DeclareModel dm) {
+		//petrinetSemantics.initialize(dataPetriNet.getTransitions(), dataPetriNet.getInitialMarking());
+		HashMap<String,Activity> declActs = dm.getActivities();
+		Set<PetrinetEdge<? extends PetrinetNode,? extends PetrinetNode>> allPnArcs = this.dataPetriNet.getEdges();
+
+		for (Transition t : this.dataPetriNet.getTransitions()) {
+
+			String l = t.getLabel();
+
+			if (declActs.keySet().contains(l)) {
+
+				List<Place> incomingPlaces = new ArrayList<Place>();
+				List<Place> outgoingPlaces = new ArrayList<Place>();
+
+				for (PetrinetEdge<? extends PetrinetNode, ? extends PetrinetNode> a:allPnArcs) {
+					PetrinetNode source = a.getSource();
+					PetrinetNode target = a.getTarget();
+
+					if (source.equals(t)) {
+						//System.out.println("From Activity -> Place");
+						//System.out.println(target.getId());
+						Place place = this.getPlaceFromLabel(target.getLabel());
+						outgoingPlaces.add(place);
+						//copyOfDataPetriNet.addArc(t,place);
+
+					}
+					else if (target.equals(t)) {
+						//System.out.println("From Place -> Activity");
+						//System.out.println(source.getLabel());
+						Place place = this.getPlaceFromLabel(source.getLabel());
+						incomingPlaces.add(place);
+					}
+
+				}
+
+
+				// Find all arcs that are related to this transition
+
+				Activity curA = declActs.get(l);
+
+				Map<String,ArrayList<String>> parts = curA.getPartitions();
+
+				if (parts.isEmpty()) {
+					continue;
+				}
+				else {
+
+				
+				for (String proposition : parts.keySet()) {
+
+					Transition propositionalTransition = this.copyOfDataPetriNet.addTransition(proposition);
+
+					for (Place incoming:incomingPlaces) {
+						this.copyOfDataPetriNet.addArc(incoming,propositionalTransition);
+					}
+
+					for (Place outgoing : outgoingPlaces) {
+						this.copyOfDataPetriNet.addArc(propositionalTransition, outgoing);
+					}
+						
+				}
+
+				this.copyOfDataPetriNet.removeTransition(getTransitionFromLabel(t.getLabel()));
+
+
+				for (Place incoming:incomingPlaces) {
+						this.copyOfDataPetriNet.removeArc(incoming, getTransitionFromLabel(t.getLabel()));
+					}
+
+					for (Place outgoing : outgoingPlaces) {
+						this.copyOfDataPetriNet.removeArc(getTransitionFromLabel(t.getLabel()), outgoing);
+					}			
+
+			}
+		}
+
+			//System.out.println(t);
+		}
+	}
+
+	private Place getPlaceFromLabel(String plabel){
+		for (Place p : this.copyOfDataPetriNet.getPlaces()) {
+			if (p.getLabel().equals(plabel)) {
+				return p;
+			}
+		}
+		return null;
+	}
+
+	private Transition getTransitionFromLabel(String tlabel) {
+		for (Transition t : this.copyOfDataPetriNet.getTransitions()) {
+			if (t.getLabel().equals(tlabel)) {
+				return t;
+			}
+		}
+		return null;
+	}
+	
+
+}
+
+

@@ -1,46 +1,173 @@
-This model contains 5 activities:
+This model contains 35 activities:
 
-a=> My attributes are: 
-ax of type integer with bounds: [0.0, 100.0]
-The followings are my intervals: [(-Infinity, 0.0), [0.0, 30.0], (30.0, 40.0], (40.0, 50.0], (50.0, 100.0], (100.0, Infinity)]
+ActivityC=> My attributes are: 
+categorical of type enum with values: [c1, c2, c3]
 
-ay of type integer with bounds: [1.0, 1000.0]
-The followings are my intervals: [(-Infinity, 1.0), [1.0, 900.0), [900.0, 1000.0], (1000.0, Infinity)]
+The followings are my partitions: {activityc_p2=[categorical is c2], activityc_p1=[categorical is c1], activityc_p3=[categorical is c3]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
 
-The followings are my partitions: {a_p4=[50.0 < ax <= 100.0, 1.0 <= ay < 900.0], a_p6=[30.0 < ax <= 40.0, 900.0 <= ay <= 1000.0], a_p2=[30.0 < ax <= 40.0, 1.0 <= ay < 900.0], a_p1=[0.0 <= ax <= 30.0, 1.0 <= ay < 900.0], a_p8=[50.0 < ax <= 100.0, 900.0 <= ay <= 1000.0], a_p5=[0.0 <= ax <= 30.0, 900.0 <= ay <= 1000.0], a_p3=[40.0 < ax <= 50.0, 1.0 <= ay < 900.0], a_p7=[40.0 < ax <= 50.0, 900.0 <= ay <= 1000.0]}
-With following costs: Add -> 1, Remove -> 1, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
-
-b=> My attributes are: 
-bs of type float with bounds: [-1000.0, 1000.0]
-The followings are my intervals: [(-Infinity, -1000.0), [-1000.0, 1000.0], (1000.0, Infinity)]
-
-bt of type float with bounds: [0.0, 100.0]
-The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0], (5.0, 100.0], (100.0, Infinity)]
-
-The followings are my partitions: {b_p2=[-1000.0 <= bs <= 1000.0, 5.0 < bt <= 100.0], b_p1=[-1000.0 <= bs <= 1000.0, 0.0 <= bt <= 5.0]}
-With following costs: Add -> 1, Remove -> 1, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
-
-c=> My attributes are: 
-name of type enum with values: [axel, susi, csaba]
-
-surname of type enum with values: [mezini, loddi, toth]
-
-The followings are my partitions: {c_p5=[name is susi, surname is loddi], c_p9=[name is csaba, surname is toth], c_p7=[name is axel, surname is toth], c_p2=[name is susi, surname is mezini], c_p4=[name is axel, surname is loddi], c_p8=[name is susi, surname is toth], c_p6=[name is csaba, surname is loddi], c_p3=[name is csaba, surname is mezini], c_p1=[name is axel, surname is mezini]}
-With following costs: Add -> 1, Remove -> 1, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
-
-d=> My attributes are: 
-boolean of type enum with values: [true, false, maybe]
-
-grade of type integer with bounds: [1.0, 10.0]
-The followings are my intervals: [(-Infinity, 1.0), [1.0, 10.0], (10.0, Infinity)]
-
-The followings are my partitions: {d_p2=[boolean is false, 1.0 <= grade <= 10.0], d_p1=[boolean is true, 1.0 <= grade <= 10.0], d_p3=[boolean is maybe, 1.0 <= grade <= 10.0]}
-With following costs: Add -> 1, Remove -> 1, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
-
-e=> My attributes are: 
+ActivityD=> My attributes are: 
 The followings are my partitions: {}
-With following costs: Add -> 1, Remove -> 1, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityE=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityF=> My attributes are: 
+categorical of type enum with values: [c1, c2, c3]
+
+The followings are my partitions: {activityf_p1=[categorical is c1], activityf_p2=[categorical is c2], activityf_p3=[categorical is c3]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityA=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0), [5.0, 10.0), [10.0, 10.0], (10.0, 20.0), [20.0, 100.0], (100.0, Infinity)]
+
+The followings are my partitions: {activitya_p1=[0.0 <= integer < 5.0], activitya_p2=[5.0 <= integer < 10.0], activitya_p5=[20.0 <= integer <= 100.0], activitya_p3=[10.0 <= integer <= 10.0], activitya_p4=[10.0 < integer < 20.0]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityB=> My attributes are: 
+categorical of type enum with values: [c1, c2, c3]
+
+The followings are my partitions: {activityb_p1=[categorical is c1], activityb_p3=[categorical is c3], activityb_p2=[categorical is c2]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityK=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0), [5.0, 10.0), [10.0, 10.0], (10.0, 20.0), [20.0, 100.0], (100.0, Infinity)]
+
+The followings are my partitions: {activityk_p3=[10.0 <= integer <= 10.0], activityk_p5=[20.0 <= integer <= 100.0], activityk_p1=[0.0 <= integer < 5.0], activityk_p2=[5.0 <= integer < 10.0], activityk_p4=[10.0 < integer < 20.0]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityL=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityN=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0), [5.0, 10.0), [10.0, 10.0], (10.0, 20.0), [20.0, 100.0], (100.0, Infinity)]
+
+The followings are my partitions: {activityn_p4=[10.0 < integer < 20.0], activityn_p2=[5.0 <= integer < 10.0], activityn_p1=[0.0 <= integer < 5.0], activityn_p3=[10.0 <= integer <= 10.0], activityn_p5=[20.0 <= integer <= 100.0]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityI=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityJ=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0), [5.0, 10.0), [10.0, 10.0], (10.0, 20.0), [20.0, 100.0], (100.0, Infinity)]
+
+The followings are my partitions: {activityj_p3=[10.0 <= integer <= 10.0], activityj_p2=[5.0 <= integer < 10.0], activityj_p4=[10.0 < integer < 20.0], activityj_p5=[20.0 <= integer <= 100.0], activityj_p1=[0.0 <= integer < 5.0]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityS=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityT=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityU=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAA=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityV=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityO=> My attributes are: 
+categorical of type enum with values: [c1, c2, c3]
+
+The followings are my partitions: {activityo_p2=[categorical is c2], activityo_p3=[categorical is c3], activityo_p1=[categorical is c1]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityP=> My attributes are: 
+integer of type integer with bounds: [0.0, 100.0]
+The followings are my intervals: [(-Infinity, 0.0), [0.0, 5.0), [5.0, 10.0), [10.0, 10.0], (10.0, 20.0), [20.0, 100.0], (100.0, Infinity)]
+
+The followings are my partitions: {activityp_p5=[20.0 <= integer <= 100.0], activityp_p3=[10.0 <= integer <= 10.0], activityp_p2=[5.0 <= integer < 10.0], activityp_p1=[0.0 <= integer < 5.0], activityp_p4=[10.0 < integer < 20.0]}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityQ=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityR=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n61=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n41=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityW=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n64=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityX=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n45=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n67=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityY=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityZ=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+n66=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAF=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAC=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAB=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAE=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
+
+ActivityAD=> My attributes are: 
+The followings are my partitions: {}
+With following costs: Add -> 2, Remove -> 2, Replace -> 1, Extra cost for wrong attributes -> 0, Extra cost for missing attributes -> 0
 
 This model contains following constraints:
-[template=Init, activationActivity=a, activationCondition=A.ay >= 900 and A.ax > 30 and A.ax <= 40, targetActivity=null, targetCondition=null]
-[template=Choice, activationActivity=a, activationCondition=A.ax > 50 , targetActivity=b, targetCondition=T.bt > 5 ]
+[template=Absence, activationActivity=ActivityK, activationCondition=A.integer < 20 , targetActivity=null, targetCondition=null]
+[template=Existence, activationActivity=ActivityB, activationCondition=A.categorical is c2 , targetActivity=null, targetCondition=null]
+[template=Response, activationActivity=ActivityJ, activationCondition=A.integer > 10 , targetActivity=ActivityP, targetCondition=T.integer < 10 ]
+[template=Precedence, activationActivity=ActivityO, activationCondition=A.categorical is c1 , targetActivity=ActivityF, targetCondition=T.categorical is c2 ]
+[template=Not_Response, activationActivity=ActivityL, activationCondition=null, targetActivity=ActivityL, targetCondition=null]
+[template=Chain_Response, activationActivity=ActivityA, activationCondition=A.integer < 5 , targetActivity=ActivityC, targetCondition=T.categorical is c1 ]
+[template=Response, activationActivity=ActivityP, activationCondition=A.integer > 10 , targetActivity=ActivityN, targetCondition=T.integer > 10 ]
