@@ -28,12 +28,13 @@ public class Runner {
 
     public static void main(String[] args) throws Exception {
 
-
-       //findAlignments(args[0], args[1], args[2], args[3], args[4]);
-
-       //readDataPetriNet();
-
-       findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+        if (args.length == 5) {
+            findAlignments(args[0], args[1], args[2], args[3], args[4]);
+        }
+        else if (args.length == 6) {
+            findAlignments(args[0], args[1], args[2], args[3], args[4], args[5]);
+        }
+       
 
     }
 
@@ -47,7 +48,6 @@ public class Runner {
         DeclareModel model = ioManager.readDeclareModel(modelString);
         model.assignCosts(ioManager.readCostModel(costsString));
         LogFile log = ioManager.readLog(traceString, model);
-        //System.out.println(log);
 
 
         ioManager.exportModel(model);
@@ -64,14 +64,16 @@ public class Runner {
                 IOManager.getInstance().exportProblemPDDL(problem, i);
                 i++;
             }
-            /* 
+
+            IOManager.getInstance().exportToDot(pddlGenerator.getAutomaton());
+            
             Planner planner = new Planner(domain, problems);
             
             ArrayList<String> alignments = planner.readProblems();
             log.repairTraces(alignments, model.getActivities());
 
             IOManager.getInstance().exportLog(log);
-            */
+            
         }
     }
 
@@ -81,10 +83,11 @@ public class Runner {
             String substitutionsString, 
             String costsString,
             String petriNetName) throws Exception {
+                /**
+                 * 
+                 */
 
         ArrayList<DeterministicAutomaton> allAutomata = new ArrayList<DeterministicAutomaton>();
-
-        System.out.println( "THIS IS GETTING EXECUTED");
 
 
         IOManager ioManager = IOManager.getInstance();
@@ -92,17 +95,8 @@ public class Runner {
         DeclareModel model = ioManager.readDeclareModel(modelString);
         model.assignCosts(ioManager.readCostModel(costsString));
         LogFile log = ioManager.readLog(traceString, model);
-        //System.out.println(log);
 
         DataPetriNet dpn = new DataPetriNet(petriNetName, model);
-
-        
-
-           
-        //System.out.println(dpn.createAutomatonVisualizationString(dpn.getAutomaton(), false));
-            
-        
-            
 
 
         ioManager.exportModel(model);
@@ -132,6 +126,14 @@ public class Runner {
                 IOManager.getInstance().exportProblemPDDL(problem, i);
                 i++;
             }
+
+            Planner planner = new Planner(domain, problems);
+            
+            ArrayList<String> alignments = planner.readProblems();
+
+            for (String a:alignments) {
+                System.out.println(a);
+            }
             /* 
             Planner planner = new Planner(domain, problems);
             
@@ -145,55 +147,6 @@ public class Runner {
         
     }
 
-
-    public static void readDataPetriNet() throws SyntaxParserException, Exception {
-        String path = "C:\\Users\\paulw\\OneDrive - Scientific Network South Tyrol\\trace-alignment\\petrinet\\a29g9AND.pnml";
-        DataPetriNet dpn = null;
-
-        IOManager ioManager = IOManager.getInstance();
-        String modelString = "a29g9AND_7_parsed.decl";
-
-        DeclareModel model = ioManager.readDeclareModel(modelString);
-
-        String ltlFormula = new DeclareToLTL(model).translateModelToLTL();
-
-
-        try {
-            dpn = new DataPetriNet(path, model);
-
-            Automaton declAutomaton = LTL2Automaton.getInstance().translate(new DefaultParser(ltlFormula).parse());
-
-
-            ArrayList<DeterministicAutomaton> allAutomata = new ArrayList<DeterministicAutomaton>();
-
-            allAutomata.add(dpn.getAutomaton());
-            //allAutomata.add(declAutomaton.op.determinize());
-
-            DeterministicAutomaton globalAutomaton = AutomatonUtils.createMinimizedIntersection(allAutomata);
-
-            ioManager.exportToDot(globalAutomaton);
-
-        
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (SecurityException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (DPNIOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
 
 }
 

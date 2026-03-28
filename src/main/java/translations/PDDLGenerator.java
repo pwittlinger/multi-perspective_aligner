@@ -320,4 +320,8 @@ public class PDDLGenerator {
 
     }
 
+    public Automaton getAutomaton() {
+        return this.automaton;
+    }
+
 }
