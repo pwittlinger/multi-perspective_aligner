@@ -65,6 +65,7 @@ public class Runner {
                 i++;
             }
 
+            /* 
             IOManager.getInstance().exportToDot(pddlGenerator.getAutomaton());
             
             Planner planner = new Planner(domain, problems);
@@ -73,6 +74,7 @@ public class Runner {
             log.repairTraces(alignments, model.getActivities());
 
             IOManager.getInstance().exportLog(log);
+            */
             
         }
     }
@@ -127,14 +129,15 @@ public class Runner {
                 i++;
             }
 
-            Planner planner = new Planner(domain, problems);
+            /*
+            //Planner planner = new Planner(domain, problems);
             
-            ArrayList<String> alignments = planner.readProblems();
+            //ArrayList<String> alignments = planner.readProblems();
 
-            for (String a:alignments) {
-                System.out.println(a);
-            }
-            /* 
+            //for (String a:alignments) {
+           //     System.out.println(a);
+            //}
+            
             Planner planner = new Planner(domain, problems);
             
             ArrayList<String> alignments = planner.readProblems();

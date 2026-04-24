@@ -1,0 +1,72 @@
+activity ActivityA
+activity ActivityU
+activity ActivityK
+activity ActivityC
+activity ActivityZ
+activity ActivityAE
+activity ActivityP
+activity ActivityAI
+activity ActivityAL
+activity ActivityAM
+activity ActivityAK
+activity ActivityAJ
+activity ActivityAH
+activity ActivityN
+activity ActivityAN
+activity ActivityL
+activity ActivityF
+activity ActivityAS
+activity ActivityAT
+activity ActivityS
+activity ActivityQ
+activity ActivityAR
+activity ActivityE
+activity ActivityAQ
+activity ActivityD
+activity ActivityAP
+activity ActivityR
+activity ActivityAO
+activity ActivityJ
+activity ActivityAU
+activity ActivityB
+activity ActivityY
+activity ActivityAB
+activity ActivityW
+activity ActivityV
+activity ActivityAF
+activity ActivityAD
+activity ActivityAC
+activity ActivityAA
+activity ActivityAG
+activity n70
+activity n72
+activity n74
+activity n77
+activity n84
+activity n87
+activity n92
+activity n93
+activity n100
+activity n104
+activity n105
+activity n109
+activity n110
+activity n113
+bind ActivityAE: categorical
+bind ActivityB:	categorical
+bind ActivityF:	categorical
+bind ActivityP:	integer
+bind ActivityN:	integer
+bind ActivityK:	integer
+bind ActivityA:	integer
+bind ActivityJ:	integer
+bind ActivityC:	categorical
+integer: integer between 0 and 100 
+categorical: c1, c2, c3
+Response[ActivityJ, ActivityP] |A.integer > 10 |T.integer < 10 |
+Precedence[ActivityF, ActivityAE] |A.categorical is c2 |T.categorical is c1 |
+Not Response[ActivityL, ActivityL] | | |
+Absence[ActivityK] |A.integer < 20 |
+Chain Response[ActivityA, ActivityC] |A.integer < 5 |T.categorical is c1 |
+Existence[ActivityB] |A.categorical is c2 |
+Response[ActivityP, ActivityN] |A.integer > 10 |T.integer > 10 |

@@ -1,0 +1,5391 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 76
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityq_p4 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:37
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem1.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.06
+	Percent of CPU this job got: 233%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 164040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43941
+	Voluntary context switches: 1078
+	Involuntary context switches: 138
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 101
+UFX:false
+|F|:24
+|X|:0
+|A|:618
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.007) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 15, Evaluated States: 45, Time: 0.018) Frontier Size: 30
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityq_p3 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 25
+Heuristic Time (msec): 3
+Search Time (msec): 23
+Expanded Nodes:34
+States Evaluated:69
+Number of Dead-Ends detected:0
+Number of Duplicates detected:722
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem2.pddl -planner opt-blind"
+	User time (seconds): 0.76
+	System time (seconds): 0.06
+	Percent of CPU this job got: 233%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 175544
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 47021
+	Voluntary context switches: 1039
+	Involuntary context switches: 230
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 92
+UFX:false
+|F|:24
+|X|:0
+|A|:674
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.011) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 22, Evaluated States: 56, Time: 0.029) Frontier Size: 32
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p4 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (sync t3 activitym_p2 t4)
+4.0: (sync t4 activityq_p4 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 40
+Heuristic Time (msec): 4
+Search Time (msec): 38
+Expanded Nodes:46
+States Evaluated:84
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1073
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem3.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.08
+	Percent of CPU this job got: 234%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 176724
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48820
+	Voluntary context switches: 1206
+	Involuntary context switches: 338
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 68
+UFX:false
+|F|:24
+|X|:0
+|A|:686
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityq_p2 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem4.pddl -planner opt-blind"
+	User time (seconds): 0.62
+	System time (seconds): 0.06
+	Percent of CPU this job got: 196%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162660
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44582
+	Voluntary context switches: 1351
+	Involuntary context switches: 459
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 90
+UFX:false
+|F|:23
+|X|:0
+|A|:672
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityh_p1 t4)
+4.0: (goto S0 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):0.0
+Planning Time (msec): 12
+Heuristic Time (msec): 3
+Search Time (msec): 11
+Expanded Nodes:7
+States Evaluated:51
+Number of Dead-Ends detected:0
+Number of Duplicates detected:78
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem5.pddl -planner opt-blind"
+	User time (seconds): 0.65
+	System time (seconds): 0.06
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 163588
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44681
+	Voluntary context switches: 1041
+	Involuntary context switches: 525
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 273
+UFX:false
+|F|:24
+|X|:0
+|A|:650
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.007) Frontier Size: 6
+Problem Solved
+
+Found Plan:
+0.0: (repl_ActivityG_missing t0 ActivityG_missing activityg_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p4 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 21
+Heuristic Time (msec): 3
+Search Time (msec): 20
+Expanded Nodes:15
+States Evaluated:72
+Number of Dead-Ends detected:0
+Number of Duplicates detected:165
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem6.pddl -planner opt-blind"
+	User time (seconds): 0.66
+	System time (seconds): 0.04
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45210
+	Voluntary context switches: 1357
+	Involuntary context switches: 689
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 298
+UFX:false
+|F|:24
+|X|:0
+|A|:670
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.02) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p1 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (sync t3 activityq_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 78
+Heuristic Time (msec): 8
+Search Time (msec): 62
+Expanded Nodes:25
+States Evaluated:60
+Number of Dead-Ends detected:0
+Number of Duplicates detected:569
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem7.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.05
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 174992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48350
+	Voluntary context switches: 1308
+	Involuntary context switches: 663
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 158
+UFX:false
+|F|:24
+|X|:0
+|A|:724
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.013) Frontier Size: 17
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (repl_ActivityM_missing t2 ActivityM_missing activitym_p2 t3)
+3.0: (sync t3 activityp_p3 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 31
+Heuristic Time (msec): 5
+Search Time (msec): 30
+Expanded Nodes:19
+States Evaluated:81
+Number of Dead-Ends detected:0
+Number of Duplicates detected:251
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem8.pddl -planner opt-blind"
+	User time (seconds): 0.83
+	System time (seconds): 0.05
+	Percent of CPU this job got: 152%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179308
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49126
+	Voluntary context switches: 1496
+	Involuntary context switches: 801
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 141
+UFX:false
+|F|:23
+|X|:0
+|A|:646
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.006) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 11, Evaluated States: 36, Time: 0.016) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityG_activity t0 ActivityG_missing t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (repl_ActivityM_missing t2 ActivityM_missing activitym_p2 t3)
+3.0: (sync t3 activityn_p5 t4)
+4.0: (goto S2 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):2.0
+Planning Time (msec): 23
+Heuristic Time (msec): 3
+Search Time (msec): 22
+Expanded Nodes:32
+States Evaluated:67
+Number of Dead-Ends detected:0
+Number of Duplicates detected:789
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem9.pddl -planner opt-blind"
+	User time (seconds): 0.79
+	System time (seconds): 0.07
+	Percent of CPU this job got: 172%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 173356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45514
+	Voluntary context switches: 1245
+	Involuntary context switches: 721
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 249
+UFX:false
+|F|:23
+|X|:0
+|A|:668
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.022) Frontier Size: 6
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityn_p5 t4)
+4.0: (goto S2 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):1.0
+Planning Time (msec): 62
+Heuristic Time (msec): 16
+Search Time (msec): 60
+Expanded Nodes:15
+States Evaluated:60
+Number of Dead-Ends detected:0
+Number of Duplicates detected:193
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem10.pddl -planner opt-blind"
+	User time (seconds): 0.68
+	System time (seconds): 0.06
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 172284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46549
+	Voluntary context switches: 964
+	Involuntary context switches: 621
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 110
+UFX:false
+|F|:24
+|X|:0
+|A|:694
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityg_p3 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityq_p3 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 2
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem11.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.06
+	Percent of CPU this job got: 207%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 166152
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45430
+	Voluntary context switches: 1464
+	Involuntary context switches: 732
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 182
+UFX:false
+|F|:24
+|X|:0
+|A|:624
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.011) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 9, Evaluated States: 23, Time: 0.031) Frontier Size: 14
+f(n) = 3.0 (Expanded Nodes: 24, Evaluated States: 44, Time: 0.039) Frontier Size: 20
+f(n) = 4.0 (Expanded Nodes: 45, Evaluated States: 66, Time: 0.049) Frontier Size: 21
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityG_activity t0 ActivityG_missing t1)
+1.0: (del_ActivityH_activity t1 ActivityH_missing t2)
+2.0: (del_ActivityM_activity t2 ActivityM_missing t3)
+3.0: (del_ActivityQ_activity t3 ActivityQ_missing t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):4.0
+Planning Time (msec): 58
+Heuristic Time (msec): 5
+Search Time (msec): 51
+Expanded Nodes:66
+States Evaluated:108
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1703
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem12.pddl -planner opt-blind"
+	User time (seconds): 0.92
+	System time (seconds): 0.05
+	Percent of CPU this job got: 159%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 190460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 51048
+	Voluntary context switches: 1548
+	Involuntary context switches: 808
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 224
+UFX:false
+|F|:24
+|X|:0
+|A|:688
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 15, Time: 0.016) Frontier Size: 12
+f(n) = 2.0 (Expanded Nodes: 15, Evaluated States: 36, Time: 0.033) Frontier Size: 20
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (del_ActivityM_activity t1 ActivityM_missing t2)
+2.0: (del_ActivityP_activity t2 ActivityP_missing t3)
+3.0: (sync t3 activityq_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 42
+Heuristic Time (msec): 9
+Search Time (msec): 40
+Expanded Nodes:31
+States Evaluated:82
+Number of Dead-Ends detected:0
+Number of Duplicates detected:658
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem13.pddl -planner opt-blind"
+	User time (seconds): 0.89
+	System time (seconds): 0.05
+	Percent of CPU this job got: 147%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 177552
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 50082
+	Voluntary context switches: 1418
+	Involuntary context switches: 733
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 109
+UFX:false
+|F|:24
+|X|:0
+|A|:690
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 15
+Heuristic Time (msec): 5
+Search Time (msec): 14
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem14.pddl -planner opt-blind"
+	User time (seconds): 0.78
+	System time (seconds): 0.07
+	Percent of CPU this job got: 206%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168948
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45204
+	Voluntary context switches: 1509
+	Involuntary context switches: 934
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 81
+UFX:false
+|F|:24
+|X|:0
+|A|:718
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.007) Frontier Size: 16
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (del_ActivityP_activity t2 ActivityP_missing t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 17
+Expanded Nodes:17
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:306
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem15.pddl -planner opt-blind"
+	User time (seconds): 0.70
+	System time (seconds): 0.07
+	Percent of CPU this job got: 266%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 176500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47912
+	Voluntary context switches: 1252
+	Involuntary context switches: 144
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 87
+UFX:false
+|F|:24
+|X|:0
+|A|:686
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p5 t3)
+3.0: (sync t3 activitym_p2 t4)
+4.0: (sync t4 activityp_p2 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 17
+Heuristic Time (msec): 7
+Search Time (msec): 15
+Expanded Nodes:7
+States Evaluated:57
+Number of Dead-Ends detected:0
+Number of Duplicates detected:34
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem16.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.06
+	Percent of CPU this job got: 240%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169564
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45533
+	Voluntary context switches: 1170
+	Involuntary context switches: 330
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 68
+UFX:false
+|F|:24
+|X|:0
+|A|:730
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p4 t2)
+2.0: (sync t2 activityp_p3 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 13
+Heuristic Time (msec): 5
+Search Time (msec): 11
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem17.pddl -planner opt-blind"
+	User time (seconds): 0.52
+	System time (seconds): 0.05
+	Percent of CPU this job got: 184%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 166156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44461
+	Voluntary context switches: 1058
+	Involuntary context switches: 415
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 73
+UFX:false
+|F|:24
+|X|:0
+|A|:666
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 28, Time: 0.006) Frontier Size: 23
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (del_ActivityH_activity t3 ActivityH_missing t4)
+4.0: (sync t4 activitym_p1 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 16
+Expanded Nodes:20
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:372
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem18.pddl -planner opt-blind"
+	User time (seconds): 0.53
+	System time (seconds): 0.07
+	Percent of CPU this job got: 202%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44751
+	Voluntary context switches: 788
+	Involuntary context switches: 285
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 255
+UFX:false
+|F|:24
+|X|:0
+|A|:646
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 27, Time: 0.03) Frontier Size: 22
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (del_ActivityP_activity t3 ActivityP_missing t4)
+4.0: (sync t4 activityq_p1 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 63
+Heuristic Time (msec): 7
+Search Time (msec): 57
+Expanded Nodes:14
+States Evaluated:67
+Number of Dead-Ends detected:0
+Number of Duplicates detected:153
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem19.pddl -planner opt-blind"
+	User time (seconds): 0.67
+	System time (seconds): 0.05
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 173940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46546
+	Voluntary context switches: 1359
+	Involuntary context switches: 668
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 150
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 20
+Heuristic Time (msec): 6
+Search Time (msec): 19
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:132
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem20.pddl -planner opt-blind"
+	User time (seconds): 0.69
+	System time (seconds): 0.05
+	Percent of CPU this job got: 139%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 170580
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46711
+	Voluntary context switches: 1732
+	Involuntary context switches: 828
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 165
+UFX:false
+|F|:24
+|X|:0
+|A|:730
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p1 t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 16
+Heuristic Time (msec): 3
+Search Time (msec): 13
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem21.pddl -planner opt-blind"
+	User time (seconds): 0.61
+	System time (seconds): 0.04
+	Percent of CPU this job got: 124%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165160
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44293
+	Voluntary context switches: 1397
+	Involuntary context switches: 612
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 200
+UFX:false
+|F|:24
+|X|:0
+|A|:742
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p3 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p4 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 31
+Heuristic Time (msec): 12
+Search Time (msec): 30
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:136
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem22.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.05
+	Percent of CPU this job got: 114%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169268
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45140
+	Voluntary context switches: 1752
+	Involuntary context switches: 792
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 166
+UFX:false
+|F|:24
+|X|:0
+|A|:694
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p4 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityp_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 11
+Heuristic Time (msec): 3
+Search Time (msec): 10
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem23.pddl -planner opt-blind"
+	User time (seconds): 0.54
+	System time (seconds): 0.04
+	Percent of CPU this job got: 115%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 158380
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42094
+	Voluntary context switches: 1224
+	Involuntary context switches: 578
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 184
+UFX:false
+|F|:24
+|X|:0
+|A|:658
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.011) Frontier Size: 30
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 40
+Heuristic Time (msec): 6
+Search Time (msec): 35
+Expanded Nodes:26
+States Evaluated:60
+Number of Dead-Ends detected:0
+Number of Duplicates detected:625
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem24.pddl -planner opt-blind"
+	User time (seconds): 0.78
+	System time (seconds): 0.06
+	Percent of CPU this job got: 141%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 180036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49386
+	Voluntary context switches: 1370
+	Involuntary context switches: 691
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 148
+UFX:false
+|F|:24
+|X|:0
+|A|:734
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p4 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 20
+Heuristic Time (msec): 5
+Search Time (msec): 16
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:136
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem25.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.04
+	Percent of CPU this job got: 163%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168380
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45409
+	Voluntary context switches: 1427
+	Involuntary context switches: 770
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 79
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p3 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (sync t4 activityq_p3 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem26.pddl -planner opt-blind"
+	User time (seconds): 0.61
+	System time (seconds): 0.07
+	Percent of CPU this job got: 240%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167884
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 46005
+	Voluntary context switches: 1130
+	Involuntary context switches: 134
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 108
+UFX:false
+|F|:24
+|X|:0
+|A|:678
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.008) Frontier Size: 6
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityq_p4 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 22
+Heuristic Time (msec): 5
+Search Time (msec): 20
+Expanded Nodes:17
+States Evaluated:67
+Number of Dead-Ends detected:0
+Number of Duplicates detected:196
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem27.pddl -planner opt-blind"
+	User time (seconds): 0.56
+	System time (seconds): 0.04
+	Percent of CPU this job got: 153%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 164932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43670
+	Voluntary context switches: 869
+	Involuntary context switches: 381
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 134
+UFX:false
+|F|:24
+|X|:0
+|A|:718
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 15
+Heuristic Time (msec): 5
+Search Time (msec): 13
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:38
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem28.pddl -planner opt-blind"
+	User time (seconds): 0.68
+	System time (seconds): 0.05
+	Percent of CPU this job got: 157%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44855
+	Voluntary context switches: 1576
+	Involuntary context switches: 912
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 165
+UFX:false
+|F|:24
+|X|:0
+|A|:710
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityh_p5 t4)
+4.0: (sync t4 activityp_p1 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 17
+Heuristic Time (msec): 6
+Search Time (msec): 15
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:132
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem29.pddl -planner opt-blind"
+	User time (seconds): 0.63
+	System time (seconds): 0.05
+	Percent of CPU this job got: 127%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 164628
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44621
+	Voluntary context switches: 1532
+	Involuntary context switches: 933
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 76
+UFX:false
+|F|:24
+|X|:0
+|A|:670
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.007) Frontier Size: 29
+f(n) = 2.0 (Expanded Nodes: 33, Evaluated States: 70, Time: 0.017) Frontier Size: 33
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityh_p1 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (add_ActivityP_activity S9 activityp_p2 S0)
+6.0: (goto S0 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 21
+Heuristic Time (msec): 3
+Search Time (msec): 20
+Expanded Nodes:51
+States Evaluated:93
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1076
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem30.pddl -planner opt-blind"
+	User time (seconds): 0.73
+	System time (seconds): 0.05
+	Percent of CPU this job got: 228%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 175244
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 45861
+	Voluntary context switches: 1343
+	Involuntary context switches: 549
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 264
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 79
+UFX:false
+|F|:24
+|X|:0
+|A|:750
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 10
+Heuristic Time (msec): 3
+Search Time (msec): 9
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem31.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.06
+	Percent of CPU this job got: 258%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168172
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45586
+	Voluntary context switches: 1189
+	Involuntary context switches: 104
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 144
+UFX:false
+|F|:24
+|X|:0
+|A|:642
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 15, Time: 0.014) Frontier Size: 12
+f(n) = 2.0 (Expanded Nodes: 17, Evaluated States: 47, Time: 0.031) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (del_ActivityG_activity t1 ActivityG_missing t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (del_ActivityH_activity t3 ActivityH_missing t4)
+4.0: (sync t4 activityq_p3 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 40
+Heuristic Time (msec): 7
+Search Time (msec): 36
+Expanded Nodes:42
+States Evaluated:84
+Number of Dead-Ends detected:0
+Number of Duplicates detected:909
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem32.pddl -planner opt-blind"
+	User time (seconds): 0.80
+	System time (seconds): 0.06
+	Percent of CPU this job got: 169%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 181692
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49326
+	Voluntary context switches: 1600
+	Involuntary context switches: 843
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 150
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (sync t3 activityp_p4 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 12
+Heuristic Time (msec): 3
+Search Time (msec): 9
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:130
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem33.pddl -planner opt-blind"
+	User time (seconds): 0.79
+	System time (seconds): 0.06
+	Percent of CPU this job got: 173%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46925
+	Voluntary context switches: 1834
+	Involuntary context switches: 890
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 95
+UFX:false
+|F|:24
+|X|:0
+|A|:684
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.008) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p3 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityp_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 21
+Heuristic Time (msec): 3
+Search Time (msec): 20
+Expanded Nodes:20
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:297
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem34.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.06
+	Percent of CPU this job got: 227%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167888
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44392
+	Voluntary context switches: 1047
+	Involuntary context switches: 224
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 229
+UFX:false
+|F|:24
+|X|:0
+|A|:642
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 14, Time: 0.013) Frontier Size: 11
+f(n) = 2.0 (Expanded Nodes: 16, Evaluated States: 47, Time: 0.032) Frontier Size: 30
+f(n) = 3.0 (Expanded Nodes: 45, Evaluated States: 77, Time: 0.039) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (del_ActivityH_activity t1 ActivityH_missing t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityq_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (add_ActivityP_activity S9 activityp_p2 S0)
+6.0: (goto S0 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):3.0
+Planning Time (msec): 51
+Heuristic Time (msec): 5
+Search Time (msec): 45
+Expanded Nodes:64
+States Evaluated:102
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1459
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem35.pddl -planner opt-blind"
+	User time (seconds): 0.82
+	System time (seconds): 0.05
+	Percent of CPU this job got: 132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 180648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48319
+	Voluntary context switches: 1397
+	Involuntary context switches: 715
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 247
+UFX:false
+|F|:24
+|X|:0
+|A|:710
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activitym_p2 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 32
+Heuristic Time (msec): 15
+Search Time (msec): 30
+Expanded Nodes:7
+States Evaluated:55
+Number of Dead-Ends detected:0
+Number of Duplicates detected:38
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem36.pddl -planner opt-blind"
+	User time (seconds): 0.63
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167372
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45842
+	Voluntary context switches: 1228
+	Involuntary context switches: 630
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 253
+UFX:false
+|F|:24
+|X|:0
+|A|:750
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityh_p3 t2)
+2.0: (sync t2 activityp_p1 t3)
+3.0: (sync t3 activityq_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 12
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:134
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem37.pddl -planner opt-blind"
+	User time (seconds): 0.67
+	System time (seconds): 0.05
+	Percent of CPU this job got: 116%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165800
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45082
+	Voluntary context switches: 1342
+	Involuntary context switches: 662
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 74
+UFX:false
+|F|:24
+|X|:0
+|A|:668
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.007) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 15
+Heuristic Time (msec): 3
+Search Time (msec): 15
+Expanded Nodes:13
+States Evaluated:68
+Number of Dead-Ends detected:0
+Number of Duplicates detected:179
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem38.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.05
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169476
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45479
+	Voluntary context switches: 1244
+	Involuntary context switches: 488
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 232
+UFX:false
+|F|:24
+|X|:0
+|A|:686
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (sync t3 activitym_p2 t4)
+4.0: (sync t4 activityp_p1 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 36
+Heuristic Time (msec): 11
+Search Time (msec): 23
+Expanded Nodes:7
+States Evaluated:57
+Number of Dead-Ends detected:0
+Number of Duplicates detected:33
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem39.pddl -planner opt-blind"
+	User time (seconds): 0.61
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45673
+	Voluntary context switches: 958
+	Involuntary context switches: 601
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 127
+UFX:false
+|F|:24
+|X|:0
+|A|:664
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.008) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 46, Time: 0.02) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p1 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityq_p2 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 25
+Heuristic Time (msec): 3
+Search Time (msec): 23
+Expanded Nodes:34
+States Evaluated:87
+Number of Dead-Ends detected:0
+Number of Duplicates detected:669
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem40.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.05
+	Percent of CPU this job got: 158%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48998
+	Voluntary context switches: 1540
+	Involuntary context switches: 637
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 98
+UFX:false
+|F|:24
+|X|:0
+|A|:700
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.007) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p1 t2)
+2.0: (sync t2 activityh_p5 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityp_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 17
+Expanded Nodes:20
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:297
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem41.pddl -planner opt-blind"
+	User time (seconds): 0.67
+	System time (seconds): 0.06
+	Percent of CPU this job got: 176%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 170528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45473
+	Voluntary context switches: 1262
+	Involuntary context switches: 499
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 222
+UFX:false
+|F|:24
+|X|:0
+|A|:702
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityh_p1 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 18
+Heuristic Time (msec): 7
+Search Time (msec): 17
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:34
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem42.pddl -planner opt-blind"
+	User time (seconds): 0.63
+	System time (seconds): 0.04
+	Percent of CPU this job got: 107%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 166448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44382
+	Voluntary context switches: 1431
+	Involuntary context switches: 738
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 161
+UFX:false
+|F|:24
+|X|:0
+|A|:746
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityh_p3 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p4 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 27
+Heuristic Time (msec): 12
+Search Time (msec): 25
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem43.pddl -planner opt-blind"
+	User time (seconds): 0.73
+	System time (seconds): 0.05
+	Percent of CPU this job got: 147%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 172432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46984
+	Voluntary context switches: 1462
+	Involuntary context switches: 707
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 169
+UFX:false
+|F|:24
+|X|:0
+|A|:720
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.014) Frontier Size: 24
+f(n) = 2.0 (Expanded Nodes: 29, Evaluated States: 71, Time: 0.037) Frontier Size: 39
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 45
+Heuristic Time (msec): 7
+Search Time (msec): 43
+Expanded Nodes:45
+States Evaluated:87
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1007
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem44.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.05
+	Percent of CPU this job got: 165%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 177632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47680
+	Voluntary context switches: 1480
+	Involuntary context switches: 736
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 118
+UFX:false
+|F|:23
+|X|:0
+|A|:600
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.008) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 13, Evaluated States: 46, Time: 0.018) Frontier Size: 33
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityG_activity t0 ActivityG_missing t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (del_ActivityN_activity t3 ActivityN_missing t4)
+4.0: (goto S0 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):2.0
+Planning Time (msec): 28
+Heuristic Time (msec): 3
+Search Time (msec): 26
+Expanded Nodes:38
+States Evaluated:75
+Number of Dead-Ends detected:0
+Number of Duplicates detected:796
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem45.pddl -planner opt-blind"
+	User time (seconds): 0.62
+	System time (seconds): 0.05
+	Percent of CPU this job got: 135%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45571
+	Voluntary context switches: 953
+	Involuntary context switches: 566
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 115
+UFX:false
+|F|:24
+|X|:0
+|A|:690
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.007) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 22
+Heuristic Time (msec): 2
+Search Time (msec): 21
+Expanded Nodes:18
+States Evaluated:68
+Number of Dead-Ends detected:0
+Number of Duplicates detected:284
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem46.pddl -planner opt-blind"
+	User time (seconds): 0.62
+	System time (seconds): 0.05
+	Percent of CPU this job got: 134%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44689
+	Voluntary context switches: 1015
+	Involuntary context switches: 490
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 242
+UFX:false
+|F|:24
+|X|:0
+|A|:702
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p1 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityp_p3 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 22
+Heuristic Time (msec): 10
+Search Time (msec): 20
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem47.pddl -planner opt-blind"
+	User time (seconds): 0.65
+	System time (seconds): 0.05
+	Percent of CPU this job got: 106%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168716
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 44479
+	Voluntary context switches: 1398
+	Involuntary context switches: 690
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 151
+UFX:false
+|F|:24
+|X|:0
+|A|:680
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.007) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityp_p1 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 31
+Heuristic Time (msec): 2
+Search Time (msec): 29
+Expanded Nodes:20
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:297
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem48.pddl -planner opt-blind"
+	User time (seconds): 0.70
+	System time (seconds): 0.05
+	Percent of CPU this job got: 106%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169428
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47087
+	Voluntary context switches: 1449
+	Involuntary context switches: 624
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 120
+UFX:false
+|F|:24
+|X|:0
+|A|:664
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.007) Frontier Size: 18
+f(n) = 2.0 (Expanded Nodes: 23, Evaluated States: 61, Time: 0.018) Frontier Size: 35
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (del_ActivityM_activity t2 ActivityM_missing t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 25
+Heuristic Time (msec): 3
+Search Time (msec): 24
+Expanded Nodes:50
+States Evaluated:97
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1107
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem49.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.05
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 175284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47115
+	Voluntary context switches: 1484
+	Involuntary context switches: 883
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 176
+UFX:false
+|F|:24
+|X|:0
+|A|:700
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.012) Frontier Size: 18
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (repl_ActivityM_missing t2 ActivityM_missing activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 41
+Heuristic Time (msec): 8
+Search Time (msec): 37
+Expanded Nodes:17
+States Evaluated:75
+Number of Dead-Ends detected:0
+Number of Duplicates detected:281
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem50.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.05
+	Percent of CPU this job got: 132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 175624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49362
+	Voluntary context switches: 1399
+	Involuntary context switches: 700
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 249
+UFX:false
+|F|:24
+|X|:0
+|A|:650
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.021) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 17, Evaluated States: 52, Time: 0.048) Frontier Size: 35
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activitym_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 72
+Heuristic Time (msec): 10
+Search Time (msec): 62
+Expanded Nodes:33
+States Evaluated:68
+Number of Dead-Ends detected:0
+Number of Duplicates detected:708
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem51.pddl -planner opt-blind"
+	User time (seconds): 0.69
+	System time (seconds): 0.04
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 176924
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46560
+	Voluntary context switches: 1375
+	Involuntary context switches: 695
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 156
+UFX:false
+|F|:24
+|X|:0
+|A|:738
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 18
+Heuristic Time (msec): 5
+Search Time (msec): 17
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem52.pddl -planner opt-blind"
+	User time (seconds): 0.68
+	System time (seconds): 0.06
+	Percent of CPU this job got: 177%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 166536
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45349
+	Voluntary context switches: 750
+	Involuntary context switches: 404
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 264
+UFX:false
+|F|:24
+|X|:0
+|A|:688
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.019) Frontier Size: 24
+f(n) = 2.0 (Expanded Nodes: 29, Evaluated States: 71, Time: 0.055) Frontier Size: 39
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityh_p4 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityq_p4 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 71
+Heuristic Time (msec): 7
+Search Time (msec): 66
+Expanded Nodes:45
+States Evaluated:87
+Number of Dead-Ends detected:0
+Number of Duplicates detected:999
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem53.pddl -planner opt-blind"
+	User time (seconds): 0.76
+	System time (seconds): 0.06
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 178780
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 48868
+	Voluntary context switches: 1235
+	Involuntary context switches: 620
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 82
+UFX:false
+|F|:23
+|X|:0
+|A|:668
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.007) Frontier Size: 16
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (sync t3 activityn_p5 t4)
+4.0: (goto S0 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):1.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 17
+Expanded Nodes:12
+States Evaluated:61
+Number of Dead-Ends detected:0
+Number of Duplicates detected:182
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem54.pddl -planner opt-blind"
+	User time (seconds): 0.62
+	System time (seconds): 0.05
+	Percent of CPU this job got: 228%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46276
+	Voluntary context switches: 993
+	Involuntary context switches: 191
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 252
+UFX:false
+|F|:24
+|X|:0
+|A|:668
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.011) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityp_p2 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 23
+Heuristic Time (msec): 6
+Search Time (msec): 22
+Expanded Nodes:15
+States Evaluated:71
+Number of Dead-Ends detected:0
+Number of Duplicates detected:240
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem55.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.05
+	Percent of CPU this job got: 125%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 172620
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46930
+	Voluntary context switches: 1704
+	Involuntary context switches: 862
+	Swaps: 0
+	File system inputs: 56
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 151
+UFX:false
+|F|:24
+|X|:0
+|A|:686
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.008) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 20
+Heuristic Time (msec): 3
+Search Time (msec): 18
+Expanded Nodes:19
+States Evaluated:67
+Number of Dead-Ends detected:0
+Number of Duplicates detected:333
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem56.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.05
+	Percent of CPU this job got: 161%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47602
+	Voluntary context switches: 1414
+	Involuntary context switches: 634
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 198
+UFX:false
+|F|:24
+|X|:0
+|A|:710
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 14, Time: 0.012) Frontier Size: 11
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (del_ActivityH_activity t1 ActivityH_missing t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 32
+Heuristic Time (msec): 6
+Search Time (msec): 31
+Expanded Nodes:19
+States Evaluated:69
+Number of Dead-Ends detected:0
+Number of Duplicates detected:329
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem57.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.05
+	Percent of CPU this job got: 132%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 178164
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47153
+	Voluntary context switches: 1502
+	Involuntary context switches: 747
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 200
+UFX:false
+|F|:24
+|X|:0
+|A|:674
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.011) Frontier Size: 16
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 45, Time: 0.026) Frontier Size: 23
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p1 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (del_ActivityQ_activity t3 ActivityQ_missing t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 35
+Heuristic Time (msec): 6
+Search Time (msec): 34
+Expanded Nodes:40
+States Evaluated:90
+Number of Dead-Ends detected:0
+Number of Duplicates detected:668
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem58.pddl -planner opt-blind"
+	User time (seconds): 0.84
+	System time (seconds): 0.05
+	Percent of CPU this job got: 155%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179764
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49735
+	Voluntary context switches: 1166
+	Involuntary context switches: 752
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 85
+UFX:false
+|F|:24
+|X|:0
+|A|:690
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.006) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 11, Evaluated States: 32, Time: 0.014) Frontier Size: 21
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityg_p4 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 19
+Heuristic Time (msec): 3
+Search Time (msec): 18
+Expanded Nodes:34
+States Evaluated:80
+Number of Dead-Ends detected:0
+Number of Duplicates detected:809
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem59.pddl -planner opt-blind"
+	User time (seconds): 0.73
+	System time (seconds): 0.08
+	Percent of CPU this job got: 246%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 183828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48996
+	Voluntary context switches: 1164
+	Involuntary context switches: 362
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 88
+UFX:false
+|F|:24
+|X|:0
+|A|:676
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.007) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityp_p3 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 15
+Heuristic Time (msec): 3
+Search Time (msec): 15
+Expanded Nodes:13
+States Evaluated:68
+Number of Dead-Ends detected:0
+Number of Duplicates detected:179
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem60.pddl -planner opt-blind"
+	User time (seconds): 0.70
+	System time (seconds): 0.07
+	Percent of CPU this job got: 238%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 172064
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46424
+	Voluntary context switches: 1066
+	Involuntary context switches: 245
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 74
+UFX:false
+|F|:24
+|X|:0
+|A|:710
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:37
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem61.pddl -planner opt-blind"
+	User time (seconds): 0.66
+	System time (seconds): 0.06
+	Percent of CPU this job got: 259%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44992
+	Voluntary context switches: 1157
+	Involuntary context switches: 78
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 170
+UFX:false
+|F|:24
+|X|:0
+|A|:710
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityq_p2 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 21
+Heuristic Time (msec): 6
+Search Time (msec): 18
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem62.pddl -planner opt-blind"
+	User time (seconds): 0.70
+	System time (seconds): 0.05
+	Percent of CPU this job got: 140%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 172228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46817
+	Voluntary context switches: 1013
+	Involuntary context switches: 599
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 265
+UFX:false
+|F|:23
+|X|:0
+|A|:588
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.018) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 13, Evaluated States: 46, Time: 0.035) Frontier Size: 33
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityG_activity t0 ActivityG_missing t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityo_p2 t3)
+3.0: (del_ActivityN_activity t3 ActivityN_missing t4)
+4.0: (goto S0 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):2.0
+Planning Time (msec): 55
+Heuristic Time (msec): 12
+Search Time (msec): 50
+Expanded Nodes:38
+States Evaluated:75
+Number of Dead-Ends detected:0
+Number of Duplicates detected:795
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem63.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.04
+	Percent of CPU this job got: 118%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48146
+	Voluntary context switches: 860
+	Involuntary context switches: 592
+	Swaps: 0
+	File system inputs: 56
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 200
+UFX:false
+|F|:24
+|X|:0
+|A|:718
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p3 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (sync t4 activityq_p4 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 18
+Heuristic Time (msec): 6
+Search Time (msec): 17
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem64.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.05
+	Percent of CPU this job got: 136%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46526
+	Voluntary context switches: 1330
+	Involuntary context switches: 672
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 192
+UFX:false
+|F|:24
+|X|:0
+|A|:714
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p3 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 15
+Heuristic Time (msec): 6
+Search Time (msec): 14
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:37
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem65.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.05
+	Percent of CPU this job got: 141%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45784
+	Voluntary context switches: 1550
+	Involuntary context switches: 759
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 101
+UFX:false
+|F|:24
+|X|:0
+|A|:610
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.005) Frontier Size: 6
+f(n) = 2.0 (Expanded Nodes: 13, Evaluated States: 39, Time: 0.014) Frontier Size: 26
+f(n) = 3.0 (Expanded Nodes: 36, Evaluated States: 67, Time: 0.017) Frontier Size: 27
+Problem Solved
+
+Found Plan:
+0.0: (del_ActivityA_activity t0 ActivityA_missing t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (del_ActivityP_activity t3 ActivityP_missing t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):3.0
+Planning Time (msec): 21
+Heuristic Time (msec): 2
+Search Time (msec): 19
+Expanded Nodes:57
+States Evaluated:97
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1347
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem66.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.06
+	Percent of CPU this job got: 237%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 186172
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 50113
+	Voluntary context switches: 1174
+	Involuntary context switches: 208
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 87
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityh_p2 t4)
+4.0: (sync t4 activityp_p2 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 10
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:132
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem67.pddl -planner opt-blind"
+	User time (seconds): 0.59
+	System time (seconds): 0.05
+	Percent of CPU this job got: 232%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 163864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45164
+	Voluntary context switches: 938
+	Involuntary context switches: 208
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 135
+UFX:false
+|F|:24
+|X|:0
+|A|:690
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 28, Time: 0.011) Frontier Size: 23
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (del_ActivityQ_activity t3 ActivityQ_missing t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 30
+Heuristic Time (msec): 7
+Search Time (msec): 28
+Expanded Nodes:25
+States Evaluated:79
+Number of Dead-Ends detected:0
+Number of Duplicates detected:387
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem68.pddl -planner opt-blind"
+	User time (seconds): 0.71
+	System time (seconds): 0.06
+	Percent of CPU this job got: 141%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 177844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48351
+	Voluntary context switches: 1316
+	Involuntary context switches: 905
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 147
+UFX:false
+|F|:24
+|X|:0
+|A|:686
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.009) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 25
+Heuristic Time (msec): 3
+Search Time (msec): 23
+Expanded Nodes:19
+States Evaluated:67
+Number of Dead-Ends detected:0
+Number of Duplicates detected:333
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem69.pddl -planner opt-blind"
+	User time (seconds): 0.78
+	System time (seconds): 0.06
+	Percent of CPU this job got: 152%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 176312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47448
+	Voluntary context switches: 1546
+	Involuntary context switches: 705
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 151
+UFX:false
+|F|:24
+|X|:0
+|A|:734
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p4 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 20
+Heuristic Time (msec): 5
+Search Time (msec): 12
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:134
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem70.pddl -planner opt-blind"
+	User time (seconds): 0.69
+	System time (seconds): 0.05
+	Percent of CPU this job got: 166%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 170336
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46194
+	Voluntary context switches: 1196
+	Involuntary context switches: 739
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 93
+UFX:false
+|F|:24
+|X|:0
+|A|:694
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activityh_p3 t4)
+4.0: (sync t4 activitym_p1 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 11
+Heuristic Time (msec): 3
+Search Time (msec): 10
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem71.pddl -planner opt-blind"
+	User time (seconds): 0.46
+	System time (seconds): 0.05
+	Percent of CPU this job got: 168%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42384
+	Voluntary context switches: 704
+	Involuntary context switches: 260
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 187
+UFX:false
+|F|:24
+|X|:0
+|A|:642
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 28, Time: 0.012) Frontier Size: 23
+f(n) = 2.0 (Expanded Nodes: 26, Evaluated States: 59, Time: 0.032) Frontier Size: 30
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p3 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (del_ActivityP_activity t3 ActivityP_missing t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 42
+Heuristic Time (msec): 5
+Search Time (msec): 34
+Expanded Nodes:40
+States Evaluated:88
+Number of Dead-Ends detected:0
+Number of Duplicates detected:738
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem72.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.05
+	Percent of CPU this job got: 138%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 183584
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48596
+	Voluntary context switches: 1035
+	Involuntary context switches: 690
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 102
+UFX:false
+|F|:24
+|X|:0
+|A|:738
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 10
+Heuristic Time (msec): 3
+Search Time (msec): 9
+Expanded Nodes:7
+States Evaluated:56
+Number of Dead-Ends detected:0
+Number of Duplicates detected:40
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem73.pddl -planner opt-blind"
+	User time (seconds): 0.50
+	System time (seconds): 0.06
+	Percent of CPU this job got: 179%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165916
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43908
+	Voluntary context switches: 658
+	Involuntary context switches: 266
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 107
+UFX:false
+|F|:24
+|X|:0
+|A|:754
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p3 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activityp_p4 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 16
+Heuristic Time (msec): 5
+Search Time (msec): 14
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem74.pddl -planner opt-blind"
+	User time (seconds): 0.50
+	System time (seconds): 0.05
+	Percent of CPU this job got: 174%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167668
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44349
+	Voluntary context switches: 902
+	Involuntary context switches: 509
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 137
+UFX:false
+|F|:24
+|X|:0
+|A|:654
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 34, Time: 0.017) Frontier Size: 27
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p1 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityq_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 46
+Heuristic Time (msec): 5
+Search Time (msec): 42
+Expanded Nodes:49
+States Evaluated:86
+Number of Dead-Ends detected:0
+Number of Duplicates detected:988
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem75.pddl -planner opt-blind"
+	User time (seconds): 0.66
+	System time (seconds): 0.05
+	Percent of CPU this job got: 174%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169644
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46094
+	Voluntary context switches: 636
+	Involuntary context switches: 300
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 87
+UFX:false
+|F|:24
+|X|:0
+|A|:738
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p3 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p5 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 2
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem76.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.06
+	Percent of CPU this job got: 229%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45111
+	Voluntary context switches: 1107
+	Involuntary context switches: 194
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 89
+UFX:false
+|F|:24
+|X|:0
+|A|:654
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 33, Time: 0.007) Frontier Size: 26
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (del_ActivityQ_activity t4 ActivityQ_missing t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 21
+Heuristic Time (msec): 3
+Search Time (msec): 19
+Expanded Nodes:25
+States Evaluated:55
+Number of Dead-Ends detected:0
+Number of Duplicates detected:554
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem77.pddl -planner opt-blind"
+	User time (seconds): 0.63
+	System time (seconds): 0.06
+	Percent of CPU this job got: 224%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43215
+	Voluntary context switches: 976
+	Involuntary context switches: 414
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 85
+UFX:false
+|F|:24
+|X|:0
+|A|:726
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p4 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 10
+Heuristic Time (msec): 3
+Search Time (msec): 9
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:133
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem78.pddl -planner opt-blind"
+	User time (seconds): 0.64
+	System time (seconds): 0.05
+	Percent of CPU this job got: 215%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 167196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 44986
+	Voluntary context switches: 876
+	Involuntary context switches: 404
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 101
+UFX:false
+|F|:24
+|X|:0
+|A|:718
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 15
+Heuristic Time (msec): 3
+Search Time (msec): 10
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:136
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem79.pddl -planner opt-blind"
+	User time (seconds): 0.61
+	System time (seconds): 0.06
+	Percent of CPU this job got: 198%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45707
+	Voluntary context switches: 828
+	Involuntary context switches: 285
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 82
+UFX:false
+|F|:24
+|X|:0
+|A|:718
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p4 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityq_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 11
+Heuristic Time (msec): 3
+Search Time (msec): 10
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem80.pddl -planner opt-blind"
+	User time (seconds): 0.61
+	System time (seconds): 0.07
+	Percent of CPU this job got: 224%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 165404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 46520
+	Voluntary context switches: 768
+	Involuntary context switches: 363
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 85
+UFX:false
+|F|:24
+|X|:0
+|A|:702
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 12
+Heuristic Time (msec): 3
+Search Time (msec): 11
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:130
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem81.pddl -planner opt-blind"
+	User time (seconds): 0.65
+	System time (seconds): 0.07
+	Percent of CPU this job got: 235%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168772
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45086
+	Voluntary context switches: 1039
+	Involuntary context switches: 300
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 116
+UFX:false
+|F|:24
+|X|:0
+|A|:696
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.011) Frontier Size: 17
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p2 t2)
+2.0: (repl_ActivityM_missing t2 ActivityM_missing activitym_p2 t3)
+3.0: (sync t3 activityp_p1 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 26
+Heuristic Time (msec): 5
+Search Time (msec): 25
+Expanded Nodes:18
+States Evaluated:81
+Number of Dead-Ends detected:0
+Number of Duplicates detected:156
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem82.pddl -planner opt-blind"
+	User time (seconds): 0.83
+	System time (seconds): 0.07
+	Percent of CPU this job got: 229%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 173236
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46329
+	Voluntary context switches: 1369
+	Involuntary context switches: 691
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 74
+UFX:false
+|F|:24
+|X|:0
+|A|:662
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 34, Time: 0.006) Frontier Size: 27
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 20
+Heuristic Time (msec): 2
+Search Time (msec): 18
+Expanded Nodes:49
+States Evaluated:86
+Number of Dead-Ends detected:0
+Number of Duplicates detected:990
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem83.pddl -planner opt-blind"
+	User time (seconds): 0.66
+	System time (seconds): 0.05
+	Percent of CPU this job got: 267%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 173112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47368
+	Voluntary context switches: 1159
+	Involuntary context switches: 101
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 75
+UFX:false
+|F|:24
+|X|:0
+|A|:612
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.006) Frontier Size: 16
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 46, Time: 0.015) Frontier Size: 24
+f(n) = 3.0 (Expanded Nodes: 45, Evaluated States: 74, Time: 0.018) Frontier Size: 27
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p1 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (del_ActivityM_activity t3 ActivityM_missing t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):3.0
+Planning Time (msec): 23
+Heuristic Time (msec): 3
+Search Time (msec): 22
+Expanded Nodes:77
+States Evaluated:104
+Number of Dead-Ends detected:0
+Number of Duplicates detected:2010
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem84.pddl -planner opt-blind"
+	User time (seconds): 0.72
+	System time (seconds): 0.07
+	Percent of CPU this job got: 258%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 181292
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48727
+	Voluntary context switches: 1192
+	Involuntary context switches: 177
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 72
+UFX:false
+|F|:24
+|X|:0
+|A|:698
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p5 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p2 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 2
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:131
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem85.pddl -planner opt-blind"
+	User time (seconds): 0.65
+	System time (seconds): 0.07
+	Percent of CPU this job got: 240%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 166492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 44848
+	Voluntary context switches: 1049
+	Involuntary context switches: 313
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 221
+UFX:false
+|F|:24
+|X|:0
+|A|:698
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.01) Frontier Size: 17
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityh_p4 t1)
+1.0: (sync t1 activitym_p1 t2)
+2.0: (del_ActivityP_activity t2 ActivityP_missing t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 36
+Heuristic Time (msec): 6
+Search Time (msec): 34
+Expanded Nodes:21
+States Evaluated:73
+Number of Dead-Ends detected:0
+Number of Duplicates detected:284
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem86.pddl -planner opt-blind"
+	User time (seconds): 0.80
+	System time (seconds): 0.05
+	Percent of CPU this job got: 130%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 180208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49192
+	Voluntary context switches: 1038
+	Involuntary context switches: 657
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 104
+UFX:false
+|F|:24
+|X|:0
+|A|:664
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.007) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 23, Evaluated States: 61, Time: 0.018) Frontier Size: 36
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityh_p1 t2)
+2.0: (del_ActivityM_activity t2 ActivityM_missing t3)
+3.0: (sync t3 activityp_p5 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 24
+Heuristic Time (msec): 2
+Search Time (msec): 22
+Expanded Nodes:46
+States Evaluated:87
+Number of Dead-Ends detected:0
+Number of Duplicates detected:969
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem87.pddl -planner opt-blind"
+	User time (seconds): 0.74
+	System time (seconds): 0.05
+	Percent of CPU this job got: 227%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 179528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48075
+	Voluntary context switches: 820
+	Involuntary context switches: 329
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 75
+UFX:false
+|F|:24
+|X|:0
+|A|:662
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 15, Time: 0.008) Frontier Size: 12
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (repl_ActivityG_missing t1 ActivityG_missing activityg_p5 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityp_p1 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 19
+Heuristic Time (msec): 3
+Search Time (msec): 18
+Expanded Nodes:22
+States Evaluated:78
+Number of Dead-Ends detected:0
+Number of Duplicates detected:342
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem88.pddl -planner opt-blind"
+	User time (seconds): 0.70
+	System time (seconds): 0.06
+	Percent of CPU this job got: 253%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171852
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46296
+	Voluntary context switches: 1401
+	Involuntary context switches: 164
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 82
+UFX:false
+|F|:23
+|X|:0
+|A|:630
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 21, Time: 0.006) Frontier Size: 17
+f(n) = 2.0 (Expanded Nodes: 20, Evaluated States: 46, Time: 0.015) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p1 t2)
+2.0: (del_ActivityH_activity t2 ActivityH_missing t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (goto S2 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):2.0
+Planning Time (msec): 21
+Heuristic Time (msec): 3
+Search Time (msec): 20
+Expanded Nodes:46
+States Evaluated:77
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1060
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem89.pddl -planner opt-blind"
+	User time (seconds): 0.75
+	System time (seconds): 0.06
+	Percent of CPU this job got: 248%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171948
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46212
+	Voluntary context switches: 1231
+	Involuntary context switches: 147
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 88
+UFX:false
+|F|:24
+|X|:0
+|A|:662
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 6, Evaluated States: 36, Time: 0.007) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 16
+Heuristic Time (msec): 3
+Search Time (msec): 15
+Expanded Nodes:17
+States Evaluated:72
+Number of Dead-Ends detected:0
+Number of Duplicates detected:211
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem90.pddl -planner opt-blind"
+	User time (seconds): 0.68
+	System time (seconds): 0.06
+	Percent of CPU this job got: 255%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 174076
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46272
+	Voluntary context switches: 984
+	Involuntary context switches: 164
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 87
+UFX:false
+|F|:24
+|X|:0
+|A|:706
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 7, Evaluated States: 41, Time: 0.006) Frontier Size: 34
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (sync t2 activityh_p2 t3)
+3.0: (sync t3 activitym_p1 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (add_ActivityP_activity S9 activityp_p2 S0)
+6.0: (goto S0 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):1.0
+Planning Time (msec): 18
+Heuristic Time (msec): 3
+Search Time (msec): 16
+Expanded Nodes:21
+States Evaluated:61
+Number of Dead-Ends detected:0
+Number of Duplicates detected:494
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem91.pddl -planner opt-blind"
+	User time (seconds): 0.67
+	System time (seconds): 0.06
+	Percent of CPU this job got: 245%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45406
+	Voluntary context switches: 1173
+	Involuntary context switches: 210
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 111
+UFX:false
+|F|:24
+|X|:0
+|A|:738
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityh_p3 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 10
+Heuristic Time (msec): 2
+Search Time (msec): 9
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:135
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem92.pddl -planner opt-blind"
+	User time (seconds): 0.69
+	System time (seconds): 0.06
+	Percent of CPU this job got: 148%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47049
+	Voluntary context switches: 999
+	Involuntary context switches: 570
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 129
+UFX:false
+|F|:24
+|X|:0
+|A|:664
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.017) Frontier Size: 18
+f(n) = 2.0 (Expanded Nodes: 23, Evaluated States: 61, Time: 0.036) Frontier Size: 35
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p4 t2)
+2.0: (del_ActivityM_activity t2 ActivityM_missing t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (del_ActivityN_activity t4 ActivityN_missing t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 58
+Heuristic Time (msec): 10
+Search Time (msec): 53
+Expanded Nodes:50
+States Evaluated:97
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1107
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem93.pddl -planner opt-blind"
+	User time (seconds): 0.72
+	System time (seconds): 0.06
+	Percent of CPU this job got: 161%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 49712
+	Voluntary context switches: 923
+	Involuntary context switches: 562
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 115
+UFX:false
+|F|:24
+|X|:0
+|A|:720
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 4, Evaluated States: 22, Time: 0.012) Frontier Size: 18
+f(n) = 2.0 (Expanded Nodes: 25, Evaluated States: 69, Time: 0.042) Frontier Size: 42
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p2 t1)
+1.0: (sync t1 activityg_p5 t2)
+2.0: (repl_ActivityM_missing t2 ActivityM_missing activitym_p2 t3)
+3.0: (sync t3 activityq_p5 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 51
+Heuristic Time (msec): 8
+Search Time (msec): 50
+Expanded Nodes:47
+States Evaluated:93
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1110
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem94.pddl -planner opt-blind"
+	User time (seconds): 0.65
+	System time (seconds): 0.06
+	Percent of CPU this job got: 175%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 175292
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47335
+	Voluntary context switches: 753
+	Involuntary context switches: 405
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 77
+UFX:false
+|F|:24
+|X|:0
+|A|:734
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p3 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityp_p2 t3)
+3.0: (sync t3 activityq_p3 t4)
+4.0: (sync t4 activityn_p5 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 2
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:134
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem95.pddl -planner opt-blind"
+	User time (seconds): 0.55
+	System time (seconds): 0.06
+	Percent of CPU this job got: 209%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169856
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45752
+	Voluntary context switches: 767
+	Involuntary context switches: 302
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 91
+UFX:false
+|F|:24
+|X|:0
+|A|:664
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.007) Frontier Size: 24
+f(n) = 2.0 (Expanded Nodes: 27, Evaluated States: 62, Time: 0.018) Frontier Size: 32
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p2 t2)
+2.0: (sync t2 activityh_p3 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (del_ActivityP_activity t4 ActivityP_missing t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):2.0
+Planning Time (msec): 24
+Heuristic Time (msec): 3
+Search Time (msec): 22
+Expanded Nodes:54
+States Evaluated:93
+Number of Dead-Ends detected:0
+Number of Duplicates detected:1149
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem96.pddl -planner opt-blind"
+	User time (seconds): 0.76
+	System time (seconds): 0.05
+	Percent of CPU this job got: 247%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 180472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 48724
+	Voluntary context switches: 1097
+	Involuntary context switches: 211
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 83
+UFX:false
+|F|:24
+|X|:0
+|A|:682
+|P|:0
+|E|:0
+h(I):0.0
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityj_p2 t1)
+1.0: (sync t1 activityh_p5 t2)
+2.0: (sync t2 activitym_p1 t3)
+3.0: (sync t3 activityp_p2 t4)
+4.0: (sync t4 activityq_p4 t5)
+5.0: (goto S0 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):0.0
+Planning Time (msec): 9
+Heuristic Time (msec): 3
+Search Time (msec): 8
+Expanded Nodes:9
+States Evaluated:58
+Number of Dead-Ends detected:0
+Number of Duplicates detected:130
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem97.pddl -planner opt-blind"
+	User time (seconds): 0.57
+	System time (seconds): 0.05
+	Percent of CPU this job got: 229%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 164440
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 43773
+	Voluntary context switches: 869
+	Involuntary context switches: 297
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 132
+UFX:false
+|F|:24
+|X|:0
+|A|:668
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.01) Frontier Size: 24
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activityg_p1 t1)
+1.0: (sync t1 activityj_p2 t2)
+2.0: (sync t2 activityh_p4 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityq_p5 t5)
+5.0: (goto S2 s_abstract t5)
+
+Plan-Length:6
+Metric (Search):1.0
+Planning Time (msec): 20
+Heuristic Time (msec): 4
+Search Time (msec): 19
+Expanded Nodes:13
+States Evaluated:68
+Number of Dead-Ends detected:0
+Number of Duplicates detected:179
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem98.pddl -planner opt-blind"
+	User time (seconds): 0.75
+	System time (seconds): 0.06
+	Percent of CPU this job got: 195%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168444
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45406
+	Voluntary context switches: 1497
+	Involuntary context switches: 690
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 109
+UFX:false
+|F|:24
+|X|:0
+|A|:672
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 5, Evaluated States: 29, Time: 0.009) Frontier Size: 24
+f(n) = 2.0 (Expanded Nodes: 29, Evaluated States: 71, Time: 0.022) Frontier Size: 39
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (sync t1 activityg_p4 t2)
+2.0: (sync t2 activityj_p2 t3)
+3.0: (repl_ActivityM_missing t3 ActivityM_missing activitym_p2 t4)
+4.0: (sync t4 activityq_p3 t5)
+5.0: (add_ActivityP_activity S10 activityp_p2 S2)
+6.0: (goto S2 s_abstract t5)
+
+Plan-Length:7
+Metric (Search):2.0
+Planning Time (msec): 28
+Heuristic Time (msec): 5
+Search Time (msec): 26
+Expanded Nodes:45
+States Evaluated:87
+Number of Dead-Ends detected:0
+Number of Duplicates detected:991
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem99.pddl -planner opt-blind"
+	User time (seconds): 0.80
+	System time (seconds): 0.06
+	Percent of CPU this job got: 242%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 169632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46703
+	Voluntary context switches: 1305
+	Involuntary context switches: 475
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 156
+UFX:false
+|F|:23
+|X|:0
+|A|:608
+|P|:0
+|E|:0
+h(I):0.0
+f(n) = 1.0 (Expanded Nodes: 3, Evaluated States: 15, Time: 0.018) Frontier Size: 12
+f(n) = 2.0 (Expanded Nodes: 17, Evaluated States: 47, Time: 0.032) Frontier Size: 29
+Problem Solved
+
+Found Plan:
+0.0: (sync t0 activitya_p5 t1)
+1.0: (del_ActivityG_activity t1 ActivityG_missing t2)
+2.0: (sync t2 activitym_p2 t3)
+3.0: (del_ActivityN_activity t3 ActivityN_missing t4)
+4.0: (goto S2 s_abstract t4)
+
+Plan-Length:5
+Metric (Search):2.0
+Planning Time (msec): 48
+Heuristic Time (msec): 7
+Search Time (msec): 40
+Expanded Nodes:39
+States Evaluated:73
+Number of Dead-Ends detected:0
+Number of Duplicates detected:929
+	Command being timed: "timeout 600 java -Xmx8g -jar ./enhsp3.jar -o ./pddl/BasePN-0And-del-3-d5/domain.pddl -f ./pddl/BasePN-0And-del-3-d5/problem100.pddl -planner opt-blind"
+	User time (seconds): 0.77
+	System time (seconds): 0.06
+	Percent of CPU this job got: 177%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 168768
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46367
+	Voluntary context switches: 843
+	Involuntary context switches: 475
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
